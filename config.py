@@ -17,8 +17,8 @@ CATEGORIES = [
         "description": "每天吸收些稀奇古怪的知识，期待引发后续的灵机一动。",
         "sources": [
             {"name": "知乎日报", "url": "https://plink.anyfeeder.com/zhihu/daily"},
-            {"name": "好奇心日报", "url": "http://www.qdaily.com/feed.xml"},
-            {"name": "知乎每日精选", "url": "https://www.zhihu.com/rss"},
+            {"name": "酷 壳 – CoolShell", "url": "http://coolshell.cn/feed"},
+            {"name": "少数派", "url": "https://sspai.com/feed"},
         ]
     }
 ]
