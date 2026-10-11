@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互联网新闻聚合 - 2026-10-11</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+        }
+
+        /* 顶部导航 */
+        header {
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 0 24px;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 56px;
+        }
+
+        .site-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .site-date {
+            font-size: 13px;
+            color: #86868b;
+        }
+
+        nav {
+            display: flex;
+            gap: 4px;
+        }
+
+        .nav-item {
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #1d1d1f;
+            text-decoration: none;
+            transition: background 0.2s;
+            font-weight: 500;
+        }
+
+        .nav-item:hover {
+            background: #f5f5f7;
+        }
+
+        /* 主内容区 */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 32px 24px;
+        }
+
+        /* 分类区块 */
+        .category-section {
+            margin-bottom: 48px;
+        }
+
+        .category-header {
+            margin-bottom: 20px;
+        }
+
+        .category-header h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1d1d1f;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+
+        .category-desc {
+            font-size: 15px;
+            color: #86868b;
+        }
+
+        /* 文章网格 */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 16px;
+        }
+
+        /* 文章卡片 */
+        .article-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .article-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .article-source {
+            background: #f0f0f5;
+            color: #6e6e73;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 10px;
+        }
+
+        .article-time {
+            font-size: 12px;
+            color: #86868b;
+        }
+
+        .article-title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .article-title a {
+            color: #1d1d1f;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .article-title a:hover {
+            color: #0071e3;
+        }
+
+        .article-summary {
+            font-size: 14px;
+            color: #6e6e73;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 32px 24px;
+            color: #86868b;
+            font-size: 13px;
+            border-top: 1px solid rgba(0,0,0,0.06);
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .header-inner { flex-direction: column; height: auto; padding: 12px 0; gap: 8px; }
+            nav { flex-wrap: wrap; justify-content: center; }
+            .articles-grid { grid-template-columns: 1fr; }
+            .category-header h2 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div>
+                <div class="site-title">📰 互联网新闻聚合</div>
+            </div>
+            <nav>
+                <a href="#互联网资讯" class="nav-item">互联网资讯</a>
+<a href="#奇思妙想" class="nav-item">奇思妙想</a>
+
+            </nav>
+            <div class="site-date">更新于 2026-10-11 12:16</div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="互联网资讯" class="category-section">
+            <div class="category-header">
+                <h2>互联网资讯</h2>
+                <p class="category-desc">整合互联网资讯媒体，偏重于前端科技、电子硬件、手机应用。</p>
+            </div>
+            <div class="articles-grid">
+        
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-11 10:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/3990015565708035?f=rss" target="_blank" rel="noopener">AI运动硬件公司获数亿B轮融资，用体育大模型重构网球自主训练体验｜硬氪首发</a>
+                    </h3>
+                    <p class="article-summary">作者｜黄楠 编辑｜袁斯来 硬氪获悉，AI体育硬件公司「庞伯特」近日完成数亿元B轮融资，由上海国投先导基金领投，元禾璞华、浦东创投等跟投，老股东蓝驰创投持续加注。高鹄资本担任独家财务顾问。 此前公司已连续完成三轮A轮系列融资，神骐资本、明势创投、蓝驰创投、锦秋基金、华创资本及成为资本等头部机构集体参与...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-11 08:53</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372216" target="_blank" rel="noopener">马斯克豪言 SpaceX 估值将超1000万亿美元，遭拉表打脸；传腾讯字节加速个人智能体研发；四部门拟禁止汽车采用全隐藏式门把手</a>
+                    </h3>
+                    <p class="article-summary">马斯克豪言 SpaceX 估值超 1000 万亿美元，惨遭拉表打脸近日，马斯克在社交平台大胆预测，SpaceX 未来估值有望突破 1000 万亿美元，体量将远超当前全球经济总量。目前 SpaceX 估值仅约 2.2 万亿美元，而 2025 年全球 GDP 总量约 118 万亿美元，此番极具颠覆性的超...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-10 15:30</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4019731047731078?f=rss" target="_blank" rel="noopener">成年人要的「安心」，有时是一支笔给的</a>
+                    </h3>
+                    <p class="article-summary">在快节奏、高强度的现代都市里，我们每天都在被推着向前，生活似乎随时处于一种微小的失控与无序之中。 当一切都可以被屏幕与算法快速替代，我们反而开始怀念那些看得见、摸得着的实感。重新拿起一支笔，在纸页间划掉一项任务、记下一个灵感，这种极为具体的书写，正在成为成年人的“精神兜底”：不管今天多乱，至少这一笔...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-10 14:07</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372196" target="_blank" rel="noopener">好产品就是与时代和生活共振｜2026 年度极客最爱好物启动</a>
+                    </h3>
+                    <p class="article-summary">一件好产品，往往是在用过一段时间之后，才让人意识到它的好。出门时顺手带上，遇到事情时首先打开，或者因为有了它，愿意尝试一件过去觉得麻烦的事。这样的产品，值得被分享给更多人。 2026 年，我们把寻找好产品的目光，投向更丰富的形态。能协助完成任务的 AI 应用、戴在身上的智能设备，以及尝试在真实环境中...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-10 13:58</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372195" target="_blank" rel="noopener">记录生生不息的创新力量｜2026 年度「InnoForce 50」启动</a>
+                    </h3>
+                    <p class="article-summary">过去几年，科技行业最重要的变化之一，是创新的底层逻辑正在被重新改写。 到了 2026 年，AI 已经不只是技术变量，而成为影响产品形态和组织方式的关键变量。它开始进入办公室、工厂、汽车、机器人、医院等场景，也进入了许多过去并不处在科技叙事中心的行业。它改变软件，也反过来改变硬件；改变一个人的工作方式...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-10 10:35</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4019446240857993?f=rss" target="_blank" rel="noopener">世界的下一个版本，由我们定义 ｜2026苏客松招募启动</a>
+                    </h3>
+                    <p class="article-summary">图片1 图片2 图片3 图片4 图片5 图片6 图片7</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-10 10:26</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4019439680327817?f=rss" target="_blank" rel="noopener">用AI降低激光焊使用门槛，这家公司完成数千万元融资｜36氪首发</a>
+                    </h3>
+                    <p class="article-summary">作者&nbsp;|&nbsp;张子怡 编辑&nbsp;|&nbsp;袁斯来 硬氪获悉，智能激光金属加工设备公司LaserCyber已完成数千万元融资，由启高资本投资、为溪创投跟投，苍竹资本担任长期独家财务顾问。 LaserCyber于2025年8月成立于深圳，定位为“桌面智能激光工厂”。公司首款激光...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-10 09:27</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372184" target="_blank" rel="noopener">Jev 开发商估值已达 75 亿美元；苹果投资 AI 音频初创；传 OpenAI、Anthropic 高管私下推演 AI 灾难场景</a>
+                    </h3>
+                    <p class="article-summary">内存等成本压力上升，2027 全球笔记本价格恐继续上涨 市场调查机构集邦咨询（Trendforce）于 10 月 8 日发布博文，表示如果零部件价格继续维持高位，品牌扩大成本转嫁，终端涨价可能延长用户换机周期，预估 2027 年全球笔记本市场面临出货、价格双重影响。 在 2026 年第 3 季度以建...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-10 08:04</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4019297973735560?f=rss" target="_blank" rel="noopener">8点1氪丨特朗普买入Meta股票；山姆宣布拟限制亲友卡绑定；豆包开通水、电、燃气等生活缴费功能</a>
+                    </h3>
+                    <p class="article-summary">今日热点导览 Anthropic据悉组建专门团队对接2028年总统候选人 中国手机迎来新一轮涨价潮，部分机型涨幅达1000元 B站申请JILIJILI等商标 广东汕头在全国率先推出“词元出海贷” 英国大学生申领贷款将需达到最低标准 TOP 3大新闻 特朗普买入Meta股票，最高达2500万美元 最新...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-10 08:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4018053011951493?f=rss" target="_blank" rel="noopener">尊界踏板断裂背后：百万豪车，每一个零件都得较真</a>
+                    </h3>
+                    <p class="article-summary">制动踏板断裂，这个看似离谱的故障，出现在了一辆百万级豪车上。 10月8日，懂车帝发布测试视频显示，在时速100至0的连续刹停试验中，尊界V800连续三辆车制动踏板都被踩断。视频显示，三辆车踏板断裂位置一致，均为包裹踏板转轴的塑料加强件。懂车帝视频显示，断裂当下，驾驶员对踏板施加的力已超1600N。 ...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-09 16:55</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4018406199021449?f=rss" target="_blank" rel="noopener">别等项目成功了，才开始讲它的故事！</a>
+                    </h3>
+                    <p class="article-summary">36氪项目推荐 在创业圈，有很多这样的项目：一支团队花了几年时间打磨技术，终于让产品走进真实应用场景；一家初创公司深耕细分领域，解决了一个长期存在的行业问题；还有一些创业者，正在把一个新想法变成真正的产品。 它们可能还没有很高的知名度，也未必拿到了亮眼的融资成绩，但正在发生的变化，本身就值得被关注。...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-09 15:35</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4018318436110215?f=rss" target="_blank" rel="noopener">载人eVTOL获TC受理，「齐飞航空」完成近亿元战略轮融资｜36氪首发</a>
+                    </h3>
+                    <p class="article-summary">文&nbsp;|&nbsp;阿至 封面来源&nbsp;|&nbsp;企业供图 低空经济的资本叙事正在走向分化。 2026上半年，领域内大额融资频发，资金高度向少数头部公司集中，eVTOL整机研发制造占据绝对主导地位。进入三季度，行业负面舆情伴随市场收紧，机构对低空赛道的态度普遍转向谨慎。 多位从业者...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-09 12:34</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372163" target="_blank" rel="noopener">我使用国产「个人 AI 助手」的十天｜AI 上新</a>
+                    </h3>
+                    <p class="article-summary">过去一年，AI 产品越来越想变成一个「人」。 一边是越来越自动化的 Agent，已经可以直接操作电脑，甚至和其他 AI 互相通信。 而另一边，是近期大火的「个人助理」式 Personal AI，它不仅要完成眼前的任务，还想记住是谁在提需求：这个人关心什么，手上有哪些没做完的事。 就在最近一个月里， ...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-09 12:28</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372148" target="_blank" rel="noopener">攻克超声穿颅读脑，拿下 4 亿元新融资，他们要做脑科学的「英伟达」</a>
+                    </h3>
+                    <p class="article-summary">&nbsp; 一家深圳公司，让实时「看清」人类大脑变成了可能。 极客公园获悉，鲲为科技近期完成 4 亿元新一轮融资，新增股东包括 XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓。 在鲲为位于深圳的研发中心，创始人刘家家向我们展示了实测对比。 一边是价值数百万的海外顶级旗舰彩超设备，一边是鲲为自主研发...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-09 10:41</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4018036253626502?f=rss" target="_blank" rel="noopener">36氪首发丨航天老兵创业做高分辨率遥感相机，连续完成多轮次近亿元融资</a>
+                    </h3>
+                    <p class="article-summary">作者&nbsp;|&nbsp;乔钰杰 编辑&nbsp;|&nbsp;袁斯来 本文约2300字，建议阅读5分钟 硬氪获悉，北京重眸科技有限公司（以下简称“重眸科技”）近日宣布完成多轮次近亿元融资，由民银国际、亦庄种子基金、远翼投资联合投资，资金将用于0.5米分辨率遥感相机批量投产、标准化产能建设以及更...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-09 10:22</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4018021038657411?f=rss" target="_blank" rel="noopener">美央构建物理AI路径闭环：把人体变成可计算的真实世界</a>
+                    </h3>
+                    <p class="article-summary">万美京AIMIRA构建"感知—理解—决策—执行—反馈"产品闭环，回答物理AI核心命题 当AI走出屏幕，游戏规则彻底改变：真实的人体有空间结构、组织状态与一刻不停的时间变化；软件说错一句话可以重新生成，机器做错一个动作，结果可能无法撤回。物理AI难的从来不是更大的模型，而是"感知—建模—决策—执行—验...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-09 08:35</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372143" target="_blank" rel="noopener">谷歌云发布 Gemini Agent；Manus 官宣五亿美元融资；小鹏上线 Robotaxi 打车小程序</a>
+                    </h3>
+                    <p class="article-summary">谷歌云发布 Gemini Agent，支持多种 AI 模型 10 月 8 日，谷歌云在 Gemini at Work 2026 发布会上宣布，面向企业客户推出 Gemini 智能体（Gemini Agent）。这款产品定位「通用工作智能体」，支持 Gemini Enterprise 、Workspa...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-08 09:40</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372099" target="_blank" rel="noopener">造物 100#07   | 给硬盘养个图书馆员、指纹钥匙给 AI 上锁、AI 对讲机住着科幻宇宙</a>
+                    </h3>
+                    <p class="article-summary">产品的创新，究竟应该如何定义它的价值？ 上周，华为、小米、苹果在 72 小时内接连发布折叠屏旗舰。华为 Mate XT 2 非凡大师 19999 元起售，小米 18 Fold 10999 元，苹果首款折叠屏 iPhone Duo 市场预计 1.6 万起。与此同时，一组数据冲上热搜，通用内存合约价环比...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-08 08:49</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372090" target="_blank" rel="noopener">ChatGPT 推出全新 IUI 智能用户界面；谷歌推出试验性 AI 游戏平台 Playground；苹果被曝联合 LG 开发门锁、摄像头等智能家居配件｜极客早知道</a>
+                    </h3>
+                    <p class="article-summary">2026 年诺贝尔化学奖公布：二人因解开不对称有机合成难题获奖，其中一位 96 岁高龄 10 月 7 日，2026 年诺贝尔化学奖正式公布，瑞典皇家科学院决定将 2026 年诺贝尔化学奖授予亨利 &middot;B&middot; 卡甘（Henri B. Kagan）和硖合宪三（Kenso Soai...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-07 08:39</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372089" target="_blank" rel="noopener">派拉蒙 1100 亿美元收购时代华纳，好莱坞诞生新巨无霸；月之暗面被曝完成 500 亿美元 PreIPO 融资；微软、Meta 被曝要求员工减少使用 Claude</a>
+                    </h3>
+                    <p class="article-summary">2026 诺贝尔物理学奖揭晓：把一立方公里南极冰变成望远镜，打开「中微子天文学」 10 月 6 日，2026 年诺贝尔物理学奖授予比利时裔美国物理学家 Francis Halzen，以表彰其「对 IceCube 中微子天文台的决定性贡献，以及发现来自天体的高能中微子」。 Halzen 领导建设的 I...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 10:46</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9436326" target="_blank" rel="noopener">伊朗称导弹打击约旦境內美军基地</a>
+                    </h3>
+                    <p class="article-summary">新华社报道，伊朗伊斯兰革命卫队星期三（7月29日）连续发布声明说，革命卫队空军当天用导弹打击了位于约旦境内的一处美军空军基地和指挥中心。路透社早前报道，美国中央司令部28日发布声明说，美军和沙特武装部队在伊拉克对伊朗支持的武装发动精确打击，并称“这些恐怖分子受伊朗伊斯兰革命卫队指使，试图袭击美军和沙...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 10:35</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9436383" target="_blank" rel="noopener">熊本县凌晨发生4.1级浅层地震 无海啸风险</a>
+                    </h3>
+                    <p class="article-summary">前一天发生7.1级强震的日本九州熊本县，星期三（7月29日）清晨再发生4.1地震。共同社报道，日本气象厅说，29日凌晨5时49分前后（新加坡时间凌晨4时49分），熊本县发生震度4地震，震源位于熊本县熊本地区，震源深度极浅，推定震级为4.1级。气象厅表示，没有海啸风险。日本首相高市早苗29日上午说，熊...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 10:08</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9435651" target="_blank" rel="noopener">秘鲁首位女总统藤森庆子宣誓就任</a>
+                    </h3>
+                    <p class="article-summary">秘鲁当选总统藤森庆子星期一（7月28日）在首都利马宣誓就职，任期至2031年7月。 新华社报道，藤森庆子在就职典礼上说，新政府将把应对厄尔尼诺现象带来的影响和改善社会治安列为两项国家紧急任务，同时加快基础设施建设，推进青年就业、教育和社会保障等领域改革。她呼吁各政治力量团结合作，共同推动国家发展。阿...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 09:59</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9436056" target="_blank" rel="noopener">乌伊外长就袭船事件通话 双方均称无意升级局势</a>
+                    </h3>
+                    <p class="article-summary">乌克兰外长瑟比加在伊朗谴责乌克兰袭击伊朗商船后，致电伊朗外长阿拉格齐，强调必须避免局势升级，并要求伊朗停止对俄罗斯的一切支持。路透社报道，瑟比加星期一（7月28日）在社交平台X发文说，当天他与阿拉格齐通话，并说：“我强调，必须避免任何升级行动，并停止对俄罗斯入侵乌克兰战争提供支持。这场战争是非法的，...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 09:20</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9435984" target="_blank" rel="noopener">美沙联军空袭伊拉克境内“与伊朗结盟恐怖分子”</a>
+                    </h3>
+                    <p class="article-summary">美国中央司令部说，美国和沙特阿拉伯军方对伊拉克境内“与伊朗结盟的恐怖分子”发动空袭。路透社报道，美国中央司令部星期二（7月28日）发布声明说：“7月28日，美国中央司令部和沙特武装部队在伊拉克对伊朗支持的恐怖分子进行了精确打击。这些恐怖分子受伊朗伊斯兰革命卫队指使，试图袭击美军和沙特能源基础设施。”...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 08:55</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9435916" target="_blank" rel="noopener">日本政府高官：熊本地震死亡人数或达十余人</a>
+                    </h3>
+                    <p class="article-summary">共同社报道，日本政府高官星期三（7月29日）上午透露，疑似与熊本县地震相关的死亡人数已超过10人，其中包括在商场“永旺梦乐城熊本”确认死亡的两名女性。熊本县政府早前发布消息说，截至目前已确认三人死亡。嘉岛町商场“永旺梦乐城熊本”有两名20多岁女性遇难；八代市一栋倒塌建筑中获救送医的一人也证实死亡。在...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 08:50</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9435880" target="_blank" rel="noopener">熊本县确认三人死亡 有房屋倒塌与人员被困</a>
+                    </h3>
+                    <p class="article-summary">日本九州熊本县政府星期三（7月29日）上午发布消息说，28日发生的地震已确认造成三人死亡。灾区仍有房屋倒塌及人员受困，县政府等部门正加紧确认灾情。共同社报道，嘉岛町商场“永旺梦乐城熊本”确认有两名20多岁女性死亡；八代市一栋倒塌建筑中获救送医的一人也证实死亡，县内死亡人数增至三人。在“永旺梦乐城熊本...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 08:15</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9435813" target="_blank" rel="noopener">伊朗拒绝阿曼方案 要求掌握霍尔木兹海峡最大控制权</a>
+                    </h3>
+                    <p class="article-summary">伊朗拒绝阿曼提出的霍尔木兹海峡共同管理方案，坚持要求获得更多控制权，使德黑兰和华盛顿迅速恢复谈判、结束战争的希望变得渺茫。《华尔街日报》星期二（7月28日）报道，与伊朗隔着霍尔木兹海峡的阿曼提出一项临时方案，旨在建立双方平等管理航道的机制，但德黑兰要求在这条对全球石油供应至关重要的水道拥有更大控制权...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 07:33</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9435729" target="_blank" rel="noopener">熊本强震后 九州新干线29日起全线停运</a>
+                    </h3>
+                    <p class="article-summary">日本九州新干线星期三（7月29日）自首班车起全线停运。共同社报道，日本九州熊本县星期二下午发生7.1级强震。日本九州铁路公司（JR九州）星期三说，九州新干线全线停运，以对轨道和设备进行检查。JR九州早前已暂停部分新干线列车服务，熊本机场跑道也因安全检查一度关闭。日本航空公司说，星期三下午1时后（新加...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 07:13</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9435694" target="_blank" rel="noopener">日本熊本7.1级强震 至少两死三人心肺骤停</a>
+                    </h3>
+                    <p class="article-summary">日本九州熊本县7.1级强震已确认有至少两人死亡、三人心肺骤停，搜救人员彻夜在局部结构坍塌的商场“永旺梦乐城熊本”搜救，已救出五人。日本放送协会（NHK）星期三（7月29日）凌晨引述地方官员说，“永旺梦乐城熊本”发现两名女性遇难，另有一人心肺骤停，五人获救。官员说，五名获救者都受伤，但无生命危险。熊本...</p>
+                </article>
+                </div></section>
+        <section id="奇思妙想" class="category-section">
+            <div class="category-header">
+                <h2>奇思妙想</h2>
+                <p class="category-desc">每天吸收些稀奇古怪的知识，期待引发后续的灵机一动。</p>
+            </div>
+            <div class="articles-grid">
+        
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-11 12:16</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793128" target="_blank" rel="noopener">研究发现早年多吃苦对大脑有害，与「吃得苦中苦方为人上人」的传统观念相悖，你认同「多吃苦才能成才」吗？</a>
+                    </h3>
+                    <p class="article-summary">高sir，🧐科普丨铲屎官丨生物老师 查看知乎原文 我们先看看这句话是怎么来的。 “吃得苦中苦，方为人上人”的原型出自明代冯梦龙写的《警世通言》第二十四卷“玉堂春落难逢夫”。 书中原意写的是，官宦子弟王三官走出书房大门，看到门上挂着一副对联： “十年受尽窗前苦，一举成名天下闻。”二门上又有一联：“不受...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-11 12:16</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793118" target="_blank" rel="noopener">人为什么没有进化成变温体质？</a>
+                    </h3>
+                    <p class="article-summary">瞻云，先让一部分知识有趣起来 查看知乎原文 你知道人这么大个的冷血动物，例如鳄鱼，功率有多少吗？ 仅仅只有 3~10W[1]。 而你硕大的大脑，功率就高达 20W，相当于整个爬行动物身体的 2~7 倍。 静坐状态下，人体新陈代谢率为 [2]。 要得到人总新陈代谢功率，这个表格的数据还需要乘以人体的体...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-11 12:16</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793157" target="_blank" rel="noopener">瞎扯 · 如何正确地吐槽</a>
+                    </h3>
+                    <p class="article-summary">瞎扯 · 说话也有恐怖谷效应吗？ 知乎日报 查看知乎原文 Q： 说话也有恐怖谷效应吗？ @五更瑠璃 ：我就想知道你这服务区的服务对象指的是人类吗 Q：可不可以莫名其妙地教我一个知识? @风都第一深情 ：如果喝了某个咖啡机里的咖啡口腔溃疡好的很快，那么请检查一下这个咖啡机里有没有蟑螂 Q： 网友质疑浙...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-11 12:16</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793151" target="_blank" rel="noopener">有哪些物种看起来像 AI 生成的，但在自然界真实存在？</a>
+                    </h3>
+                    <p class="article-summary">mekdull，chem is try！永远记得对化学和生物的热爱！ 查看知乎原文 我敢打赌，这个问题下的所有回答都不如下面这个长成正十二面体的家伙。 贝氏布拉鲁藻（Braarudosphaera bigelowii） 放眼整个生物界，或许都很难找到第二个呈现出如此规则的几何图形的生物（病毒除外），...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-11 12:16</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793156" target="_blank" rel="noopener">拿破仑时代的炮兵究竟数学要多好？</a>
+                    </h3>
+                    <p class="article-summary">古斯塔夫，《制胜的科学：拿破仑战争中的俄军战术》、《库图佐夫传》译者 查看知乎原文 正常的炮兵军官学员基本相当于目前的高中水准 + 初步微积分，部分运算对查表熟练度有要求。 如果一个拿破仑时代的青年想当上炮兵军官，他的数学究竟要多好？他究竟要学哪一方面的数学，学到什么样水平和熟练度，才能胜任？ 首先...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-11 12:16</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793142" target="_blank" rel="noopener">是否存在动物里雄性普遍比雌性漂亮，而人类却是女性普遍比男性好看的现象？为什么？</a>
+                    </h3>
+                    <p class="article-summary">剁椒鹿，全网同名，有公号更新精选内容（私信都会看，已婚已育老太婆） 查看知乎原文 对于不想看太多专业名词的朋友可以记住一个不严谨但是简单的结论： 谁丑谁带孩子。 夫妻一起带孩子的就长得一样。 当然这里的“丑”是相对的，也就是颜色不鲜艳，没有装饰性毛发等等。 人类的野生型夫妻双方应该属于夫妻双方都一样...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-11 12:16</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793167" target="_blank" rel="noopener">你觉得哪一项计算机技术被大众严重低估了？</a>
+                    </h3>
+                    <p class="article-summary">阿菊，数据中台建设专家 查看知乎原文 真正在背后支撑整个现代数字文明运转，同时又被绝大多数人当成空气的技术，其实是计算机里的时间同步。 现在大家张口闭口讨论计算机，言必称大模型、具身智能、量子芯片，要么就是算力堆了多少卡。 很多外行觉得计算机行业的核心就是算法和算力。代码写得越花哨，算法复杂度越低，...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-11 12:16</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793175" target="_blank" rel="noopener">美国本土的地又大又好，为啥古代从来没有出现过文明古国？</a>
+                    </h3>
+                    <p class="article-summary">地缘与冲突，文明与政治博弈下的地理逻辑 查看知乎原文 前言 人类文明史的发端是一万多年前的末次冰川期结束，万年前的地理环境对文明起源起到了几乎决定性的作用。 但万年前的地理环境是前几百万年塑造的，在末次冰川期结束之后大致定格。 当今的海陆格局、地形起伏基本和万年前一致，只有少量沿海地区还有海陆变迁，...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-11 12:16</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793177" target="_blank" rel="noopener">周围吵成一片时，我怎么还能一下听见有人叫我的名字？</a>
+                    </h3>
+                    <p class="article-summary">云杉，知乎遗风，科研工作者，文理双修的战士。 查看知乎原文 恭喜你，发现了「鸡尾酒会效应」（Cocktail party effect）。 我们的人脑虽然会优先把资源分给正在关注的声音，但其他声音并没有从神经系统里消失，而更像是调低了音量。 但对于名字等具有特殊意义的声音信息，却可以击穿这层屏障，引...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-11 12:16</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793166" target="_blank" rel="noopener">虫子为啥不进化的可爱一点，这样人类就不忍心踩死了？</a>
+                    </h3>
+                    <p class="article-summary">瞻云，先让一部分知识有趣起来 查看知乎原文 这叫靛蓝煞蚊（Sabethes cyaneus）[1]。 够好看了吧。 但如果它停在你胳膊上，你依旧会毫不犹豫一巴掌拍死。 其实题主把逻辑搞反了。 不是因为我们觉得虫子不可爱，所以想把虫子踩死。 而是那些让我们觉得有害的特征，让我们感觉不舒服，从而觉得不可...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-10 10:19</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/115237" target="_blank" rel="noopener">App+1｜专注星空：让「少刷手机」这件事更愉悦一点</a>
+                    </h3>
+                    <p class="article-summary">把决定使用时长的时机，放到每次打开应用之前。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-09 18:04</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/115566" target="_blank" rel="noopener">本周看什么 | 最近值得一看的 11 部作品</a>
+                    </h3>
+                    <p class="article-summary">📅本周新预告《寒夜怪谈》新预告10月1日，电影《寒夜怪谈》发布了新预告，将于11月13日在北美上映。缇·威斯特（《X》《珀尔》《玛克辛》）执导，约翰尼·德普回归奇幻巨制，将狄更斯名著《圣诞颂歌》改编为 ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-09 14:43</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/115456" target="_blank" rel="noopener">vivo X500 Pro Max 影像漫谈：当视频创作像拍照一样轻巧</a>
+                    </h3>
+                    <p class="article-summary">让生活里的寻常片刻，在被轻松记录的同时依然经得起回味。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-09 10:08</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/114869" target="_blank" rel="noopener">App+1｜所得即所见，更适合中文的字体预览工具：Anyway.Fonts</a>
+                    </h3>
+                    <p class="article-summary">Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质的文章，展示来自用户的最真实的体验和观点。文章代表作者个人观点 ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-09 08:51</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/115532" target="_blank" rel="noopener">派早报：英伟达 RTX Spark 新品一览、Anthropic 发布 Claude Haiku 5.5 模型等</a>
+                    </h3>
+                    <p class="article-summary">XMG 发布 PRO 18 系列笔记本、OpenAI 宣布在 ChatGPT 上线 GPT-6 模型查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-08 17:28</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/115282" target="_blank" rel="noopener">iPhone Duo：苹果，终究还是对强迫症下手了</a>
+                    </h3>
+                    <p class="article-summary">Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质的文章，展示来自用户的最真实的体验和观点。文章代表作者个人观点 ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-08 16:10</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/113843" target="_blank" rel="noopener">从开源清理工具到付费 Mac 应用，用户教会了我如何做产品：Mole</a>
+                    </h3>
+                    <p class="article-summary">最近我写了不少关于独立开发的思考，想着要汇总一下，就把Mole从开源CLI做到Mac付费软件这一路聊一聊：我当时是怎么想的，哪些事情做下来真的有用，也许能给正在做自己作品的朋友一些输入。去年国庆我在三 ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-08 14:42</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/115209" target="_blank" rel="noopener">扔掉的是杂念，掌控的是生活：我的断舍离实践经验</a>
+                    </h3>
+                    <p class="article-summary">断舍离从来不是为了追求极致的空旷，而是为了在混乱的生活里，重新夺回对空间的掌控权。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-08 09:47</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/115462" target="_blank" rel="noopener">App Store 生态规模五年翻倍，助力中国开发者走向全球</a>
+                    </h3>
+                    <p class="article-summary">10月8日，Apple发布《中国AppStore生态系统——2025年开发者与用户价值研究》。这份由Apple提供支持、上海财经大学商学院副教授居恒与安诺析思国际咨询公司经济学家MarkusvonWa ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-08 08:16</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/115455" target="_blank" rel="noopener">派早报：微软发布 Windows 相关新品、Google AI 新闻两则等</a>
+                    </h3>
+                    <p class="article-summary">Anthropic 推出 Claude for Google Workspace、Reflection 发布首个开放权重模型 Beam 等。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">酷 壳 – CoolShell</span>
+                        <span class="article-time">2023-05-08 17:52</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://coolshell.cn/articles/22422.html" target="_blank" rel="noopener">是微服务架构不香还是云不香？</a>
+                    </h3>
+                    <p class="article-summary">这两天技术圈里热议的一件事就是Amazon的流媒体平台Prime Video在2023年3月22日发布了一篇技术博客《规模化Prime Video的音视频监控服... Read More Read More The post 是微服务架构不香还是云不香？ first appeared on 酷 壳 ...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">酷 壳 – CoolShell</span>
+                        <span class="article-time">2023-02-12 00:31</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://coolshell.cn/articles/22398.html" target="_blank" rel="noopener">我看ChatGPT: 为啥谷歌掉了千亿美金</a>
+                    </h3>
+                    <p class="article-summary">两个月前，我试着想用 ChatGPT 帮我写篇文章《eBPF 介绍》，结果错误百出，导致我又要从头改一遍，从那天我觉得 ChatGPT 生成的内容完全不靠谱，所... Read More Read More The post 我看ChatGPT: 为啥谷歌掉了千亿美金 first appeared ...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">酷 壳 – CoolShell</span>
+                        <span class="article-time">2023-02-03 15:46</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://coolshell.cn/articles/22367.html" target="_blank" rel="noopener">聊聊 nostr 和 审查</a>
+                    </h3>
+                    <p class="article-summary">这两天在网络上又有一个东西火了，Twitter 的创始人 @jack 新的社交 iOS App Damus 上苹果商店（第二天就因为违反中国法律在中国区下架了... Read More Read More The post 聊聊 nostr 和 审查 first appeared on 酷 壳 - ...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">酷 壳 – CoolShell</span>
+                        <span class="article-time">2022-12-13 15:39</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://coolshell.cn/articles/22341.html" target="_blank" rel="noopener">感染新冠的经历</a>
+                    </h3>
+                    <p class="article-summary">写一篇与技术无关的文章，供大家参考。我住北京朝阳，从上周三开始我家一家三口陆续发烧生病，自测抗原后，都是阳性。好消息是，这个奥密克戎跟一般的病毒性感冒差不多，没... Read More Read More The post 感染新冠的经历 first appeared on 酷 壳 - CoolS...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">酷 壳 – CoolShell</span>
+                        <span class="article-time">2022-12-10 10:38</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://coolshell.cn/articles/22320.html" target="_blank" rel="noopener">eBPF 介绍</a>
+                    </h3>
+                    <p class="article-summary">很早前就想写一篇关于eBPF的文章，但是迟迟没有动手，这两天有点时间，所以就来写一篇，这文章主要还是简单的介绍eBPF 是用来干什么的，并通过几个示例来介绍是怎... Read More Read More The post eBPF 介绍 first appeared on 酷 壳 - CoolS...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">酷 壳 – CoolShell</span>
+                        <span class="article-time">2022-10-14 12:20</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://coolshell.cn/articles/22298.html" target="_blank" rel="noopener">聊聊团队协同和协同工具</a>
+                    </h3>
+                    <p class="article-summary">这两天跟 Cali 和 Rather 做了一个线上的 Podcast &#8211; Ep.5 一起聊聊团队协同。主要是从 IM 工具扩展开来聊了一下团队的协同... Read More Read More The post 聊聊团队协同和协同工具 first appeared on 酷 壳 - C...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">酷 壳 – CoolShell</span>
+                        <span class="article-time">2022-07-19 14:43</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://coolshell.cn/articles/22263.html" target="_blank" rel="noopener">从一次经历谈 TIME_WAIT 的那些事</a>
+                    </h3>
+                    <p class="article-summary">今天来讲一讲TCP 的 TIME_WAIT 的问题。这个问题尽人皆知，不过，这次遇到的是不太一样的场景，前两天也解决了，正好写篇文章，顺便把 TIME_WAIT... Read More Read More The post 从一次经历谈 TIME_WAIT 的那些事 first appeared ...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">酷 壳 – CoolShell</span>
+                        <span class="article-time">2022-05-05 16:13</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://coolshell.cn/articles/22242.html" target="_blank" rel="noopener">ETCD的内存问题</a>
+                    </h3>
+                    <p class="article-summary">今天跟大家分享一个etcd的内存大量占用的问题，这是前段时间在我们开源软件Easegress中遇到的问题，问题是比较简单的，但是我还想把前因后果说一下，包括，为... Read More Read More The post ETCD的内存问题 first appeared on 酷 壳 - Coo...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">酷 壳 – CoolShell</span>
+                        <span class="article-time">2022-02-13 12:28</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://coolshell.cn/articles/22173.html" target="_blank" rel="noopener">“一把梭：REST API 全用 POST”</a>
+                    </h3>
+                    <p class="article-summary">写这篇文章的原因主要还是因为V2EX上的这个贴子，这个贴子中说—— “对接同事的接口，他定义的所有接口都是 post 请求，理由是 https 用 post 更... Read More Read More The post “一把梭：REST API 全用 POST” first appeared...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">酷 壳 – CoolShell</span>
+                        <span class="article-time">2022-02-12 15:50</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://coolshell.cn/articles/22157.html" target="_blank" rel="noopener">谈谈公司对员工的监控</a>
+                    </h3>
+                    <p class="article-summary">今天看到微博上有一个热点事件， 是一个关于某公司做的一个监控员工离职倾向的软件，从截图中可以看到员工访问招聘网站的次数，还有投递的简历以及搜索的关建词等等信息，... Read More Read More The post 谈谈公司对员工的监控 first appeared on 酷 壳 - Co...</p>
+                </article>
+                </div></section>
+    </main>
+
+    <footer>
+        <p>互联网新闻聚合 · 2026-10-11 · 数据来源：36Kr / 虎嗅 / 少数派 等</p>
+    </footer>
+</body>
+</html>
