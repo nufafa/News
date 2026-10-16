@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互联网新闻聚合 - 2026-10-16</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+        }
+
+        /* 顶部导航 */
+        header {
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 0 24px;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 56px;
+        }
+
+        .site-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .site-date {
+            font-size: 13px;
+            color: #86868b;
+        }
+
+        nav {
+            display: flex;
+            gap: 4px;
+        }
+
+        .nav-item {
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #1d1d1f;
+            text-decoration: none;
+            transition: background 0.2s;
+            font-weight: 500;
+        }
+
+        .nav-item:hover {
+            background: #f5f5f7;
+        }
+
+        /* 主内容区 */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 32px 24px;
+        }
+
+        /* 分类区块 */
+        .category-section {
+            margin-bottom: 48px;
+        }
+
+        .category-header {
+            margin-bottom: 20px;
+        }
+
+        .category-header h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1d1d1f;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+
+        .category-desc {
+            font-size: 15px;
+            color: #86868b;
+        }
+
+        /* 文章网格 */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 16px;
+        }
+
+        /* 文章卡片 */
+        .article-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .article-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .article-source {
+            background: #f0f0f5;
+            color: #6e6e73;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 10px;
+        }
+
+        .article-time {
+            font-size: 12px;
+            color: #86868b;
+        }
+
+        .article-title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .article-title a {
+            color: #1d1d1f;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .article-title a:hover {
+            color: #0071e3;
+        }
+
+        .article-summary {
+            font-size: 14px;
+            color: #6e6e73;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 32px 24px;
+            color: #86868b;
+            font-size: 13px;
+            border-top: 1px solid rgba(0,0,0,0.06);
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .header-inner { flex-direction: column; height: auto; padding: 12px 0; gap: 8px; }
+            nav { flex-wrap: wrap; justify-content: center; }
+            .articles-grid { grid-template-columns: 1fr; }
+            .category-header h2 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div>
+                <div class="site-title">📰 互联网新闻聚合</div>
+            </div>
+            <nav>
+                <a href="#互联网资讯" class="nav-item">互联网资讯</a>
+<a href="#奇思妙想" class="nav-item">奇思妙想</a>
+
+            </nav>
+            <div class="site-date">更新于 2026-10-16 11:19</div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="互联网资讯" class="category-section">
+            <div class="category-header">
+                <h2>互联网资讯</h2>
+                <p class="category-desc">整合互联网资讯媒体，偏重于前端科技、电子硬件、手机应用。</p>
+            </div>
+            <div class="articles-grid">
+        
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-16 10:22</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372437" target="_blank" rel="noopener">巅峰估值 50 亿美元的 AI 独角兽，何以不到 0.1 折贱卖</a>
+                    </h3>
+                    <p class="article-summary">&nbsp; 头图来源：Chatgpt 生成 &nbsp; 当地时间 10 月 12 日，曾经引爆 AI 陪伴赛道的明星项目 Character.AI，在美国特拉华州法院提交《破产法》第 11 章重组申请，开启法院监督下的资产拍卖流程。 根据披露文件，迪士尼已经与它提前达成了底价竞购协议：2000 ...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-16 10:19</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4027925884310145?f=rss" target="_blank" rel="noopener">36氪首发丨国防科技专家做微型智能无人机，累计融资超亿元，年内签下数亿元订单</a>
+                    </h3>
+                    <p class="article-summary">&nbsp; 作者&nbsp;|&nbsp;乔钰杰 编辑&nbsp;|&nbsp;袁斯来 本文约2900字，建议阅读7分钟 硬氪获悉，聚焦空中无人智能体的硬科技企业常州中湾智能科技有限公司（以下简称“中湾智能”）已连续完成天使轮、Pre-A轮、Pre-A+轮及A轮多轮融资，累计融资超亿元。历史股东包...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-16 10:18</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372436" target="_blank" rel="noopener">第一款 AI 手机，被半个互联网「拒」了</a>
+                    </h3>
+                    <p class="article-summary">&nbsp; 头图来源：chatgpt 生成 &nbsp; 10 月 14 日，豆包手机助手推出的《屏幕自动化操作声明协议》（SAEP，Screen Automation Execution Protocol）正式结束 30 天公示期。随之公布的拒绝名单显示，已有 155 款第三方应用明确关上了 A...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-16 10:15</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372435" target="_blank" rel="noopener">腾讯盯上了字节的摇钱树</a>
+                    </h3>
+                    <p class="article-summary">&nbsp; 头图来源：Chatgpt 生成 &nbsp; 短剧正在成为互联网行业最吸金的时长黑洞。 QuestMobile 数据显示，2026 年 7 月，红果短剧日活达到 1.68 亿，超过腾讯视频、爱奇艺、优酷、芒果 TV 四大长视频平台的日活总和，用户人均单日刷剧时长达到 125 分钟，甚至...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-16 08:15</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4027802678186372?f=rss" target="_blank" rel="noopener">8点1氪丨三部门联合调查“尊界V800汽车刹车踏板支架断裂问题”；国内一半AI算力被指在造爽剧；台积电第三季度净利润7631亿元台币</a>
+                    </h3>
+                    <p class="article-summary">今日热点导览 库克：苹果智能在华已经获得批准，10月底推测试版，国内采用阿里百度双伙伴 圆通总裁潘水苗出任影视飓风董事长？Tim回应 NASA疑似找到火星生命证据但因成本太高取消回收 宁德时代董事长曾毓群现场捐4亿元股票 开售不足一月，部分用户反馈iPhone 18 Pro“掉色”了 TOP3大新闻...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-16 08:15</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372430" target="_blank" rel="noopener">DeepSeek 出现服务故障，官方补偿 1 周 Token 消耗；库克：苹果智能月底在华发测试版；特斯拉、SpaceX 最快年底合并｜极客早知道</a>
+                    </h3>
+                    <p class="article-summary">DeepSeek 服务故障近 5 小时，官方补偿所有 API 用户 7 天内的消耗金额 10 月 15 日消息，DeepSeek 网页 / API 服务今日（10 月 15 日）早间出现服务问题，经过近 5 个小时的修复，终于恢复正常。 对此，DeepSeek 官方开放平台发布服务恢复及补偿通知，将...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-16 07:30</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4023919040630661?f=rss" target="_blank" rel="noopener">36氪研究院 | 2026年中国工业AI行业发展研究报告</a>
+                    </h3>
+                    <p class="article-summary">当前，中国制造业正处于向高端化、智能化、绿色化转型的关键窗口期。工业AI作为破解制造业提质、降本、增效、安全、绿色发展核心诉求的关键抓手，市场应用需求持续加速释放。据IDC调研数据，我国工业企业应用大模型及智能体的比例，已经从2024年的9.6%快速提升至2025年的47.5%，应用渗透率大幅攀升。...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-16 01:08</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372428" target="_blank" rel="noopener">手机大厂开始做穿戴录音，卷的已经不是转写：OPPO 心力球体验</a>
+                    </h3>
+                    <p class="article-summary">头图来源：极客公园「24 小时全天候录音硬件」这个概念，放到今天其实已经不太新鲜了。无论是年初的 CES，再到国内今年数次硬件展、再到一个月前 IFA 上，我都密集看了一圈把麦克风塞进手环、戒指甚至项链里的 AI 穿戴硬件。不管是海外创业团队还是国内硬件老兵，大家都在试着把屏幕拆掉，把麦克风戴到身上...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-15 18:20</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372420" target="_blank" rel="noopener">人形机器人最尴尬的事：长了一双腿，却只能定住干活</a>
+                    </h3>
+                    <p class="article-summary">作者｜Li Yuan 编辑｜郑玄 &nbsp; 长得像人，但是只能跳舞表演，根本没法真正干活。 这大概是过去几年人形机器人最尴尬的一幕。 人形机器人最初拿到天量关注，底层逻辑其实很直接：现实世界本来就是围绕人类身体设计的。楼梯、橱柜、货架、工位甚至门把手，全都有现成尺寸。理论上，机器人完全可以用下肢...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-15 13:51</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4026486163984519?f=rss" target="_blank" rel="noopener">在高价值场景跑通技术与落地双闭环，若愚科技完成亿元级Pre-A轮融资</a>
+                    </h3>
+                    <p class="article-summary">36氪获悉，机器人大脑公司深圳若愚科技有限公司（下称“若愚科技”）近日完成亿元级 Pre-A 轮融资，本轮信维通信领投，金木资本、勤道资本、黄海资本、中创资本跟投。至此，若愚科技自 2023 年成立以来累计融资规模已达数亿元。 对若愚科技而言，本轮资金落定的时点，恰好卡在其战略路径完成前半程：从高价...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-15 13:47</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4019684113371008?f=rss" target="_blank" rel="noopener">清华、西工大系团队创业做智能电动游艇，九合、初心等联合出手｜硬氪首发</a>
+                    </h3>
+                    <p class="article-summary">作者｜黄楠 编辑｜袁斯来 硬氪获悉，水面智能消费硬件品牌智能电动游艇公司「MIRAVA」近日完成近5000万元天使轮融资，本轮由九合创投领投，初心资本、Eversnow跟投。资金将重点投入核心技术研发迭代，推进产线量产建设、以保障首批终端用户订单交付，并搭建欧洲本地化渠道及服务体系，加快海外市场适配...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-15 13:22</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4026574580322439?f=rss" target="_blank" rel="noopener">AI帮我约了五个陌生人一起喝酒</a>
+                    </h3>
+                    <p class="article-summary">&nbsp; &nbsp; 文&nbsp;|&nbsp;刘思洁 编辑&nbsp;|&nbsp;&nbsp;张薇 封面来源&nbsp;|&nbsp;Table for Six&nbsp; &nbsp; 一个工作日的晚上，我要和五个陌生人坐在一起喝酒。 出发前，我不知道他们是谁，也不知道我会去哪。根据用...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-15 12:48</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4026609117532802?f=rss" target="_blank" rel="noopener">近8000块的Ebike，蔚来车主们买了数万辆｜产品观察</a>
+                    </h3>
+                    <p class="article-summary">作者&nbsp;|&nbsp;张子怡 编辑&nbsp;|&nbsp;袁斯来在小红书上搜索Lemmo Zero，你能看到有人带着它飞到京都去骑行；也有人尝试改造它，在车身后挂上拖车，骑着它去买菜；还有人挑战骑它上下班，第一天却忘记带电池。 在中国，E-bike仍是个陌生的品类，少有人知晓。人们更习惯电...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-15 12:40</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372386" target="_blank" rel="noopener">卖出去≠全球化成功，中国企业出海究竟还差什么？</a>
+                    </h3>
+                    <p class="article-summary">中国的汽车产业，正陷入前所未有的冰火两重天夹击。 2025 年，中国企业的全球销量 2700 万辆，首次超越日本；其中出口 832 万辆，相较十年前的 72.82 万辆增长超 10 倍。 但销量曲线向上的同时，利润曲线却在一路向下。2026 年上半年，国内汽车销售的利润率已经跌到了 1.52%，创下...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-15 12:02</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4026612843696776?f=rss" target="_blank" rel="noopener">曾获李泽湘、明势资本投资，这家公司想做一台会“掌镜”的摄影机器人｜早期项目</a>
+                    </h3>
+                    <p class="article-summary">作者&nbsp;|&nbsp;张子怡 编辑&nbsp;|&nbsp;袁斯来 硬氪获悉，成立于2023年的越千创新，曾在种子轮获得李泽湘投资；目前，公司已完成天使轮融资，明势创投、南山战新投、初心资本参与投资。 越千创新第一款产品以力平衡摄影机械臂Cilin X为切入点，结合智能化、轻量化的软硬件设计...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-15 11:48</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4026591408066432?f=rss" target="_blank" rel="noopener">总裁直管信息部，一家创新药企的AI试验</a>
+                    </h3>
+                    <p class="article-summary">文｜胡香赟 编辑｜海若镜 2026年，先声药业（02096.HK）总裁周云曙把信息部划归自己直管了。 近期的一场媒体交流会中，他对36氪提到：“在先声，我们现在要求管理层带头，在工作中‘拥抱’AI，不是提倡而是必须。AI的价值来自如何应用，首先要真正去用、会用、不断训练，这是基础。” 放在全球制药企...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-15 08:29</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372366" target="_blank" rel="noopener">腾讯上线「绿泡泡」短剧，主打免费好看；特斯拉 Roadster 跑车明日发布；豆包工作支持一键导入 GPT、Claude 对话 | 极客早知道</a>
+                    </h3>
+                    <p class="article-summary">155 款应用拒绝豆包助手 AI 自动化操作 10 月 14 日，豆包手机助手《屏幕自动化操作声明协议》（SAEP）30 天公示期结束，官方公布名单显示，已有 155 款第三方应用拒绝 AI 自动化操作，腾讯、阿里、美团、快手旗下多款产品，连同 Kimi、DeepSeek 等 AI 产品均在名单内，...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-15 08:13</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4026385299165321?f=rss" target="_blank" rel="noopener">8点1氪丨微信、淘宝、美团等应用，拒绝接入豆包手机助手；苹果成为全球第二家市值破5万亿美元企业；美国9月CPI同比增长3.7%，高于预期</a>
+                    </h3>
+                    <p class="article-summary">今日热点导览 绿泡泡短剧可查看朋友在看剧目 A股三大指数集体收跌，全市场近4500股下跌 OpenAI办公室发现隐藏录音设备，涉事员工被捕 德国拟2027年开征含糖饮料税 华尔街大空头警示美股：现40年未见极端市场失衡 TOP3大新闻 微信、淘宝、美团等151款应用拒绝豆包手机助手GUI自动化操作 ...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-14 08:28</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372304" target="_blank" rel="noopener">超越抖音，传红果短剧日均时长 125 分钟；299 美元，苹果推 Siri AI 带屏音箱；谷歌最强模型 Gemini 4 正式上线</a>
+                    </h3>
+                    <p class="article-summary">谷歌最强 AI 模型：Gemini 4 Argon 上线，输出词元上限 100 万个、专攻最棘手难题 10 月 14 日消息，Gemini 4 Argon现已面向全球开发者和企业开放，可通过 AI Studio、 Gemini 平台 API 使用，同时支持 Google Antigravity 的 ...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-13 21:51</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/372302" target="_blank" rel="noopener">苹果给 Siri 做了一块能认出全家人的屏幕，售价 299 美元</a>
+                    </h3>
+                    <p class="article-summary">头图来源：Apple 官网北京时间 10 月 13 日晚，苹果召开了一次主题为「欢迎回家」的新品发布会，苹果这次放进客厅的新东西，是一块 7 英寸的屏幕。它叫 Apple HomeView，美国售价 299 美元，10 月 13 日开放预订，11 月 13 日上市，一同曝光的还有第四代 Apple ...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 10:46</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9436326" target="_blank" rel="noopener">伊朗称导弹打击约旦境內美军基地</a>
+                    </h3>
+                    <p class="article-summary">新华社报道，伊朗伊斯兰革命卫队星期三（7月29日）连续发布声明说，革命卫队空军当天用导弹打击了位于约旦境内的一处美军空军基地和指挥中心。路透社早前报道，美国中央司令部28日发布声明说，美军和沙特武装部队在伊拉克对伊朗支持的武装发动精确打击，并称“这些恐怖分子受伊朗伊斯兰革命卫队指使，试图袭击美军和沙...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 10:35</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9436383" target="_blank" rel="noopener">熊本县凌晨发生4.1级浅层地震 无海啸风险</a>
+                    </h3>
+                    <p class="article-summary">前一天发生7.1级强震的日本九州熊本县，星期三（7月29日）清晨再发生4.1地震。共同社报道，日本气象厅说，29日凌晨5时49分前后（新加坡时间凌晨4时49分），熊本县发生震度4地震，震源位于熊本县熊本地区，震源深度极浅，推定震级为4.1级。气象厅表示，没有海啸风险。日本首相高市早苗29日上午说，熊...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 10:08</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9435651" target="_blank" rel="noopener">秘鲁首位女总统藤森庆子宣誓就任</a>
+                    </h3>
+                    <p class="article-summary">秘鲁当选总统藤森庆子星期一（7月28日）在首都利马宣誓就职，任期至2031年7月。 新华社报道，藤森庆子在就职典礼上说，新政府将把应对厄尔尼诺现象带来的影响和改善社会治安列为两项国家紧急任务，同时加快基础设施建设，推进青年就业、教育和社会保障等领域改革。她呼吁各政治力量团结合作，共同推动国家发展。阿...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 09:59</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9436056" target="_blank" rel="noopener">乌伊外长就袭船事件通话 双方均称无意升级局势</a>
+                    </h3>
+                    <p class="article-summary">乌克兰外长瑟比加在伊朗谴责乌克兰袭击伊朗商船后，致电伊朗外长阿拉格齐，强调必须避免局势升级，并要求伊朗停止对俄罗斯的一切支持。路透社报道，瑟比加星期一（7月28日）在社交平台X发文说，当天他与阿拉格齐通话，并说：“我强调，必须避免任何升级行动，并停止对俄罗斯入侵乌克兰战争提供支持。这场战争是非法的，...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 09:20</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9435984" target="_blank" rel="noopener">美沙联军空袭伊拉克境内“与伊朗结盟恐怖分子”</a>
+                    </h3>
+                    <p class="article-summary">美国中央司令部说，美国和沙特阿拉伯军方对伊拉克境内“与伊朗结盟的恐怖分子”发动空袭。路透社报道，美国中央司令部星期二（7月28日）发布声明说：“7月28日，美国中央司令部和沙特武装部队在伊拉克对伊朗支持的恐怖分子进行了精确打击。这些恐怖分子受伊朗伊斯兰革命卫队指使，试图袭击美军和沙特能源基础设施。”...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 08:55</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9435916" target="_blank" rel="noopener">日本政府高官：熊本地震死亡人数或达十余人</a>
+                    </h3>
+                    <p class="article-summary">共同社报道，日本政府高官星期三（7月29日）上午透露，疑似与熊本县地震相关的死亡人数已超过10人，其中包括在商场“永旺梦乐城熊本”确认死亡的两名女性。熊本县政府早前发布消息说，截至目前已确认三人死亡。嘉岛町商场“永旺梦乐城熊本”有两名20多岁女性遇难；八代市一栋倒塌建筑中获救送医的一人也证实死亡。在...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 08:50</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9435880" target="_blank" rel="noopener">熊本县确认三人死亡 有房屋倒塌与人员被困</a>
+                    </h3>
+                    <p class="article-summary">日本九州熊本县政府星期三（7月29日）上午发布消息说，28日发生的地震已确认造成三人死亡。灾区仍有房屋倒塌及人员受困，县政府等部门正加紧确认灾情。共同社报道，嘉岛町商场“永旺梦乐城熊本”确认有两名20多岁女性死亡；八代市一栋倒塌建筑中获救送医的一人也证实死亡，县内死亡人数增至三人。在“永旺梦乐城熊本...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 08:15</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9435813" target="_blank" rel="noopener">伊朗拒绝阿曼方案 要求掌握霍尔木兹海峡最大控制权</a>
+                    </h3>
+                    <p class="article-summary">伊朗拒绝阿曼提出的霍尔木兹海峡共同管理方案，坚持要求获得更多控制权，使德黑兰和华盛顿迅速恢复谈判、结束战争的希望变得渺茫。《华尔街日报》星期二（7月28日）报道，与伊朗隔着霍尔木兹海峡的阿曼提出一项临时方案，旨在建立双方平等管理航道的机制，但德黑兰要求在这条对全球石油供应至关重要的水道拥有更大控制权...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 07:33</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9435729" target="_blank" rel="noopener">熊本强震后 九州新干线29日起全线停运</a>
+                    </h3>
+                    <p class="article-summary">日本九州新干线星期三（7月29日）自首班车起全线停运。共同社报道，日本九州熊本县星期二下午发生7.1级强震。日本九州铁路公司（JR九州）星期三说，九州新干线全线停运，以对轨道和设备进行检查。JR九州早前已暂停部分新干线列车服务，熊本机场跑道也因安全检查一度关闭。日本航空公司说，星期三下午1时后（新加...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-07-29 07:13</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20260729-9435694" target="_blank" rel="noopener">日本熊本7.1级强震 至少两死三人心肺骤停</a>
+                    </h3>
+                    <p class="article-summary">日本九州熊本县7.1级强震已确认有至少两人死亡、三人心肺骤停，搜救人员彻夜在局部结构坍塌的商场“永旺梦乐城熊本”搜救，已救出五人。日本放送协会（NHK）星期三（7月29日）凌晨引述地方官员说，“永旺梦乐城熊本”发现两名女性遇难，另有一人心肺骤停，五人获救。官员说，五名获救者都受伤，但无生命危险。熊本...</p>
+                </article>
+                </div></section>
+        <section id="奇思妙想" class="category-section">
+            <div class="category-header">
+                <h2>奇思妙想</h2>
+                <p class="category-desc">每天吸收些稀奇古怪的知识，期待引发后续的灵机一动。</p>
+            </div>
+            <div class="articles-grid">
+        
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-16 11:19</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793247" target="_blank" rel="noopener">水刚咽下去，口渴怎么就缓解了？身体从哪里知道我喝水了？</a>
+                    </h3>
+                    <p class="article-summary">云杉，知乎遗风，科研工作者，文理双修的战士。 查看知乎原文 嘿，人体的奇妙小设计被你发现了。 我们的大脑，其实有一套特别聪明的“提前结算系统”。 甚至为了防止你骗它，还有一套“二次核验系统”。 水刚经过嘴巴和喉咙，还没进入胃肠吸收的时候，大脑就能根据你的吞咽次数、水温，来判断喝下的水是否够用。 然后...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-16 11:19</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793285" target="_blank" rel="noopener">瞎扯 · 如何正确地吐槽</a>
+                    </h3>
+                    <p class="article-summary">瞎扯 如何锻炼不紧张的能力？ 知乎日报 查看知乎原文 Q：&nbsp;如何锻炼不紧张的能力？&nbsp; @快乐蘑菇 ：极低成本 5 分钟制作「视频会议面试不紧张大法」： &lt;img src="https://pic2.zhimg.com/v2-70d6f0e99079ae98164d17950...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-16 11:19</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793281" target="_blank" rel="noopener">我小的时候一直在想一个问题，是不是物质体积越小，感受到的物体时间流速不一样？</a>
+                    </h3>
+                    <p class="article-summary">小树不咕，有些知识就像无糖可乐一样，喝啦！ 查看知乎原文 打个比方吧，就在你拍苍蝇的时候，每每感觉你的速度已经很快的时候，苍蝇比你更快，在它们的世界里，人类好像一个行动迟缓的巨人。 后来翻了动物行为学和神经生物学的实验论文，我才发现这不是反应快慢的问题，而是生命科学里一个被反复证实的规律： 如果把纯...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-16 11:19</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793282" target="_blank" rel="noopener">「国之大者，在祀与戎」，为什么祭祀能和战争并列成为国家大事？</a>
+                    </h3>
+                    <p class="article-summary">“国之大者，在祀与戎”，为什么祭祀能和战争并列成为国家大事？ 冯素文 查看知乎原文 《人类简史》讲了一个故事:人类诞生之初，有多个人种，其中有一个分支叫尼安德特人，身材高大，孔武有力；另一分支叫智人，身材矮小，弱小一些。两个分支相互竞争，按理说，个子大一些的，力气大一些的，更有可能赢。结果七万年前，...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-16 11:19</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793275" target="_blank" rel="noopener">历史上谁曾经成功潜入过皇宫？</a>
+                    </h3>
+                    <p class="article-summary">赵学浩，东亚海域史/都市传说/未解之谜/太阳系第一帅 查看知乎原文 说说在清代咸丰朝潜入皇宫卖馒头的王库儿是怎么回事。 这位仁兄的搞笑事迹并不是出自什么《清稗类钞》。事实上，原档案可能是出自慎刑司。 慎刑司是清朝内务府下负责管理审谳刑狱的机构。慎刑司在咸丰三（1853）年四月二十四日，发送了《为发遣...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-16 10:18</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/115688" target="_blank" rel="noopener">让读书笔记不再吃灰：我做了一款跨平台书摘管理工具</a>
+                    </h3>
+                    <p class="article-summary">从微信读书的 3 万条划线出发，我做了一个让阅读笔记重新回到日常的 App。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-16 08:23</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/116355" target="_blank" rel="noopener">派早报：Apple 智能国行 Beta 版本将于本月晚些时候上线测试版本</a>
+                    </h3>
+                    <p class="article-summary">SpaceXAI 发布 Grok Voice 3.0 语音模型、微软发布 XBOX Nano 口袋手柄等。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-15 17:10</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/116246" target="_blank" rel="noopener">新玩意 253｜少数派的编辑们最近买了啥？</a>
+                    </h3>
+                    <p class="article-summary">编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。内容声明：《新玩意》栏目如含有 ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-15 16:09</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/116181" target="_blank" rel="noopener">顺应变化，重申标准：《少数派创作手册》修订说明</a>
+                    </h3>
+                    <p class="article-summary">四年前，我们发布了《少数派创作手册》（manual.sspai.com），旨在让作者更快捷地获得创作过程中所需的信息，以及更一致地传达对于内容选编的标准和主张。四年来，《创作手册》获得了作者们的广泛查 ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-15 14:30</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/116182" target="_blank" rel="noopener">学得会的快捷指令，零基础入门苹果效率魔法</a>
+                    </h3>
+                    <p class="article-summary">快捷指令一直被视为苹果用户必备的效率利器。不仅网络上已有大量的指令可供下载，如果能根据自己的需求，从零开始构建一条快捷指令，就不用在iPhone/Mac上频繁手动操作，可以节省大量时间。然而想要熟练掌 ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-15 11:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/115238" target="_blank" rel="noopener">App+1｜Mangata：把每次散步当作一次探索旅行</a>
+                    </h3>
+                    <p class="article-summary">不一定要拍满，也不一定要发。走完看看留下了什么，就够了。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-15 08:31</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/116193" target="_blank" rel="noopener">派早报：Mozilla 推出企业版火狐浏览器、DLSS 5 最新模型即将推送等</a>
+                    </h3>
+                    <p class="article-summary">八位堂推出 Ultimate 3C+ 无线手柄、豆包手机助手将放开第三方应用屏幕自动化操作权限等。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-14 17:33</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/114861" target="_blank" rel="noopener">认知心理学背后的播客剪辑技巧</a>
+                    </h3>
+                    <p class="article-summary">为什么剪辑时会时常出现爆音？为什么有些地方剪辑后意思接得上，听起来却觉得别扭？为什么有些地方稍微动一下就会不自然？查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-14 15:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/115426" target="_blank" rel="noopener">带给摄影师更多自由：Austin Mann 评 iPhone 18 Pro 影像体验</a>
+                    </h3>
+                    <p class="article-summary">这些新技术将如何让我们的照片和视频更好？查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-14 12:10</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/115382" target="_blank" rel="noopener">家中、这里、那里——Sonos Play 体验</a>
+                    </h3>
+                    <p class="article-summary">本文是少数派联合Sonos发起的SonosPlay众测活动「最佳体验官」奖项获奖文章，奖品为免费保留两台送测的SonosPlay。你可以从众测话题页看到其他参与者的作品。目前，Sonos众测活动第二期 ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-14 07:01</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793228" target="_blank" rel="noopener">人类为什么没有进化成猛兽？</a>
+                    </h3>
+                    <p class="article-summary">瞻云，先让一部分知识有趣起来 查看知乎原文 其实，人类本来就是先往猛兽方向发展，然后才点亮的智慧。 6600 万年前，一颗十公里直径的陨石从天外而来，激起沃辛顿射流，撞出直径 180 公里的希克苏鲁伯陨石坑（Chicxulub crater）[1]。 恐龙王朝末代帝王霸王龙、巨兽泰坦龙在哀啸中，与其...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-12 07:01</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793185" target="_blank" rel="noopener">于敏-邓稼先构型的是怎么设计出来的，为什么别的国家死活搞不出来？</a>
+                    </h3>
+                    <p class="article-summary">野狸子，形而上学 查看知乎原文 于敏构型的不可复制性在于它的诞生过程本身。 于敏构型全称名为”于敏 - 邓稼先构型”，于敏负责前期理论突破，邓稼先推进后期工程落地，考虑到”设计出来”比”造出来”难度更高一筹，我们主要聊聊于敏这一头。 知道答案存在，反而会更难 氢弹的物理原理并不复杂，一般采用目前世界...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-12 07:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793196" target="_blank" rel="noopener">为什么纸张沾了油会变得更透，而沾了水就没这么明显？</a>
+                    </h3>
+                    <p class="article-summary">瞻云，先让一部分知识有趣起来 查看知乎原文 让我们先来看看，一张纸的白色究竟是什么。 这是一张纸。 撕开，破碎的边缘放大 50 倍，它是这样的： 已经能看清构成纸张的纤维素，且呈现出透明光泽。 放大 100 倍： 来源，DOI:10.1186/s40494-021-00507-2 可以看到明显的透明...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-12 07:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793191" target="_blank" rel="noopener">日本饮食为什么一餐的量那么少？</a>
+                    </h3>
+                    <p class="article-summary">看星空的仓鼠，代文曲星品酒 / 商业合作请私信 or 微信咨询 查看知乎原文 感谢邀请。 日本这国家，有趣之处在于它保留了相对完整的东北亚古典贵族（公卿）生活体系。 于是乎在习惯了没有古典贵族社会观的我国视角下，日式料理并不能以一个笼统的概念来全面覆盖，正如在我国也有众多菜系一样。 只是，日本公卿贵...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-12 06:59</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793203" target="_blank" rel="noopener">瞎扯 · 如何正确地吐槽</a>
+                    </h3>
+                    <p class="article-summary">瞎扯 · 「崩老头」你们怎么看？ 知乎日报 查看知乎原文 Q：「崩老头」你们怎么看？ @牛斗之域 ：看到很多回答说崩老头就是崩 90 后我实名反对精神小妹说了，主要崩 70 后 80 后90 后也崩不过 90 后崩不出来钱，很穷。 Q：为什么会有人说张雪机车名字土？ @艺术幻想 ：其实在美国山姆超市...</p>
+                </article>
+                </div></section>
+    </main>
+
+    <footer>
+        <p>互联网新闻聚合 · 2026-10-16 · 数据来源：36Kr / 虎嗅 / 少数派 等</p>
+    </footer>
+</body>
+</html>
