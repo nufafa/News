@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互联网新闻聚合 - 2026-10-31</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+        }
+
+        /* 顶部导航 */
+        header {
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 0 24px;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 56px;
+        }
+
+        .site-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .site-date {
+            font-size: 13px;
+            color: #86868b;
+        }
+
+        nav {
+            display: flex;
+            gap: 4px;
+        }
+
+        .nav-item {
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #1d1d1f;
+            text-decoration: none;
+            transition: background 0.2s;
+            font-weight: 500;
+        }
+
+        .nav-item:hover {
+            background: #f5f5f7;
+        }
+
+        /* 主内容区 */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 32px 24px;
+        }
+
+        /* 分类区块 */
+        .category-section {
+            margin-bottom: 48px;
+        }
+
+        .category-header {
+            margin-bottom: 20px;
+        }
+
+        .category-header h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1d1d1f;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+
+        .category-desc {
+            font-size: 15px;
+            color: #86868b;
+        }
+
+        /* 文章网格 */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 16px;
+        }
+
+        /* 文章卡片 */
+        .article-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .article-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .article-source {
+            background: #f0f0f5;
+            color: #6e6e73;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 10px;
+        }
+
+        .article-time {
+            font-size: 12px;
+            color: #86868b;
+        }
+
+        .article-title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .article-title a {
+            color: #1d1d1f;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .article-title a:hover {
+            color: #0071e3;
+        }
+
+        .article-summary {
+            font-size: 14px;
+            color: #6e6e73;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 32px 24px;
+            color: #86868b;
+            font-size: 13px;
+            border-top: 1px solid rgba(0,0,0,0.06);
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .header-inner { flex-direction: column; height: auto; padding: 12px 0; gap: 8px; }
+            nav { flex-wrap: wrap; justify-content: center; }
+            .articles-grid { grid-template-columns: 1fr; }
+            .category-header h2 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div>
+                <div class="site-title">📰 互联网新闻聚合</div>
+            </div>
+            <nav>
+                <a href="#互联网资讯" class="nav-item">互联网资讯</a>
+<a href="#奇思妙想" class="nav-item">奇思妙想</a>
+
+            </nav>
+            <div class="site-date">更新于 2026-10-31 12:17</div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="互联网资讯" class="category-section">
+            <div class="category-header">
+                <h2>互联网资讯</h2>
+                <p class="category-desc">整合互联网资讯媒体，偏重于前端科技、电子硬件、手机应用。</p>
+            </div>
+            <div class="articles-grid">
+        
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-10-31 11:04</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261031-9925131" target="_blank" rel="noopener">波兰司法控制权斗争升级 最高法院外爆发示威</a>
+                    </h3>
+                    <p class="article-summary">波兰宪法法院附近发生抗议活动，部分参与者与警方爆发冲突，多人受伤。总统纳夫罗茨基临时中断出访行程，紧急回国。新华社报道，波兰宪法法院附近星期五（10月30日）晚上爆发示威，三名抗议者3名闯入法院院区，被警方控制。冲突造成多人受伤。示威者指责总理图斯克领导的政府试图控制宪法法院。最大反对党法律与公正党...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-10-31 10:31</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261031-9925014" target="_blank" rel="noopener">刚果（金）伊波拉疫情已致逾5000人死亡</a>
+                    </h3>
+                    <p class="article-summary">刚果民主共和国（刚果（金））政府数据显示，本轮伊波拉疫情死亡人数已超过5000人。当局目前尚未找到控制疫情的有效手段。路透社报道，刚果（金）政府在星期五（10月30日）公布的数据中披露这一情况。刚果（金）这轮伊波拉疫情是该国有史以来最致命的一次，由罕见的本迪布焦（Bundibugyo）型毒株引起。目...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-10-31 10:04</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261031-9924863" target="_blank" rel="noopener">巴西前总统之子自曝潜逃原因：我在国内遭迫害</a>
+                    </h3>
+                    <p class="article-summary">巴西总统选举落败的右翼候选人弗拉维奥·博索纳罗说，他之所以离开巴西、前往美国，是因为在国内遭到迫害。 下落成迷的弗拉维奥星期五（30日）在Instagram直播，发表上述言论。他说：“这种迫害比我预想中开始得还早。”弗拉维奥是巴西前总统博索纳罗的儿子，在10月25日的总统选举中败给寻求连任的卢拉，但...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-10-31 09:30</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261031-9924716" target="_blank" rel="noopener">拉夫罗夫：我与鲁比奥进行了“不错的会谈”</a>
+                    </h3>
+                    <p class="article-summary">俄罗斯外交部长拉夫罗夫说，他与美国国务卿鲁比奥进行了“不错的交谈”。法新社报道，拉夫罗夫星期五（10月30日）在美国亚特兰大出席二十国集团（G20）外长会议期间告诉记者：“我们进行了一次不错的交谈，尽管时间很短，作为东道主，他有许多公务要处理，这是可以理解的。”自2022年入侵乌克兰以来，俄罗斯一直...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-10-31 09:29</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261031-9924562" target="_blank" rel="noopener">指财政状况恶化 惠誉下调法国评级展望至负面</a>
+                    </h3>
+                    <p class="article-summary">国际信用评级机构惠誉将法国信用评级展望调整为负面，凸显这个欧洲主要经济体在整顿公共财政问题上面临困境。彭博社报道，惠誉星期五（10月30日）晚间在一份声明中宣布上述决定。声明称，此次计划日程外的调整，反映出自惠誉今年8月评估以来法国形势的恶化，包括经济增长更加疲弱、借贷成本上升以及财政赤字扩大。声明...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-31 09:09</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4049089058126344?f=rss" target="_blank" rel="noopener">9点1氪丨币安遭黑客攻击，致其30亿美元资产被冻结；“张雪机车”商标回归张雪；美股收盘纳指重挫700点，英伟达市值蒸发1.4万亿元</a>
+                    </h3>
+                    <p class="article-summary">今日热点导览 全球“股王”再度易主，传苹果2028年推出大屏折叠iPad 姆巴佩曾代言饮品被商家清理库存，部分门店单日销量为0 日本无印良品运营商称超2700万条用户信息或外泄，MUJI中国回应国内数据独立存储 首付降到4万以内，特斯拉推出“5年0息”购车方案 11月5日起，国内航线燃油附加费再上调...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-31 08:03</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373220" target="_blank" rel="noopener">苹果官宣 Apple 智能接入阿里千问；DeepSeek 完成第二轮 1055 亿元融资，估值达 6155 亿元；英特尔股价开盘跌超 30%｜极客早知道</a>
+                    </h3>
+                    <p class="article-summary">国行 Apple 智能确定上线时间：11 月开放测试，千问接入 Siri 10 月 31 日，苹果宣布，国行 Apple 智能首批功能将于 11 月 4 日随 iOS 开发者 Beta 版开放测试，12 月随 iOS 27.3 正式面向用户推出。首批功能包括实时翻译、写作工具、照片消除、智绘表情和通...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-10-31 08:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261031-9924519" target="_blank" rel="noopener">俄外长出席引欧洲不满 G20外长会取消“全家福”环节</a>
+                    </h3>
+                    <p class="article-summary">二十国集团（G20）外交部长会议在美国举行，俄罗斯外长拉夫罗夫的出席引起反弹，这次会议取消传统的“全家福”合影环节。路透社报道，为期两天的G20外长会星期五（10月30日）在亚特兰大召开，美国国务院公布的议程安排中，并未包含集体合影；各国部长跳过这个传统环节，直接开始首场会议。德国外长瓦德富尔（Jo...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-10-31 07:24</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261031-9924466" target="_blank" rel="noopener">【美国中期选举】全美提前投票人数破4790万 刷新四年前纪录</a>
+                    </h3>
+                    <p class="article-summary">美国中期选举下周登场，佛罗里达大学机构公布的数据显示，目前已有创纪录的4790万名美国人提前投票；关键摇摆州的投票参与度大幅激增，且民主党选民提前投票人数多过共和党选民。佛罗里达大学“选举实验室”（Election Lab）星期五（10月30日）更新的数据显示，截至当天中午，全美已记录到4792万2...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-10-31 07:09</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261031-9924451" target="_blank" rel="noopener">美政府批准向乌出售500枚“爱国者”导弹</a>
+                    </h3>
+                    <p class="article-summary">美国特朗普政府批准向乌克兰出售500枚“爱国者”导弹，价值总额达21亿美元（约27亿新元）。法新社报道，美国国务院星期五（10月30日）发布声明说，特朗普政府批准向乌克兰出售500枚“爱国者”导弹及相关设备，批准方案已提交国会审议。声明说：“这次拟议的军售将提升乌克兰的综合防空与反导能力，从而增强它...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-31 06:26</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373238" target="_blank" rel="noopener">国行 Apple 智能官网正式上线：千问接入，11 月推送</a>
+                    </h3>
+                    <p class="article-summary">头图图片来源：Apple10 月 31 日，苹果中国官网的 Newsroom 发布新闻稿《Apple 智能即将登陆中国》，给了一张具体的时间表：11 月 4 日起，首批 Apple 智能功能随最新的 iOS 开发者 Beta 版开放测试；12 月 iOS 27.3 正式发布时，面向中国用户推出。苹果...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-10-30 23:32</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261030-9921810" target="_blank" rel="noopener">美国拟近30年来首次调整婴儿配方奶粉营养标准</a>
+                    </h3>
+                    <p class="article-summary">美国食品药品监督管理局（FDA）拟近30年来首次调整婴儿配方奶粉的营养标准，包括提高维生素D和碘含量，以确保婴儿获得足够营养，促进健康成长。美国有线电视新闻网（CNN）报道，FDA代理主管迪亚曼塔斯（Kyle Diamantas）星期四（10月29日）说，这项调整是特朗普政府去年3月启动的“鹳鸟加速...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-10-30 23:01</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261030-9921561" target="_blank" rel="noopener">澳研究识别近1500个疾病相关候选基因 助力精准医疗</a>
+                    </h3>
+                    <p class="article-summary">澳大利亚加文医学研究所等机构参与的研究团队通过分析近2000名参与者大量免疫细胞的基因序列和活性，揭示了一些遗传变异影响特定免疫细胞功能并与多种疾病发生关联的机制，为相关疾病的药物研发和精准医疗提供了新线索。新华社报道，加文医学研究所日前发布新闻公报说，该所研究人员与默多克儿童研究所、新南威尔士大学...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-30 18:57</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4048092462070017?f=rss" target="_blank" rel="noopener">72道工序、灵巧手进厂打螺丝：临界点数采手套发布，要补上触觉数据缺口｜最前线</a>
+                    </h3>
+                    <p class="article-summary">作者｜黄楠 编辑｜袁斯来 2026年10月29日，智元创新日·灵巧操作分论坛上，临界点（AGILINK）对外展示了灵巧手走向工业真实工况的关键进展。 在绍兴卧龙产线的POC验证工位，OmniHand灵巧手完成了对同系列灵巧手的出厂整机性能测试，连续跑完72道工序，从物料上料、螺丝锁固到自检、下料归位...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-30 16:12</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4048085285763584?f=rss" target="_blank" rel="noopener">第一批用上WorkBuddy的乙方，已经提前下班了</a>
+                    </h3>
+                    <p class="article-summary">撰文｜深海 封面来源｜《装腔启示录》截图 乙方，大概是职场里最“时间贫困”的一群人。 客户的需求就是个盲盒，在打开对话框之前，你永远不知道这次是“简单优化一下”，还是“我们换个方向试试”。广告公司的大楼灯总是亮到深夜，只因甲方的意见历经层层审批，在最后关头才能抵达乙方的信箱。 乙方的时间总是非常紧迫...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-30 16:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4048078906800642?f=rss" target="_blank" rel="noopener">AI初创企业的下半场：钱往哪里去？</a>
+                    </h3>
+                    <p class="article-summary">作者｜王晗玉 编辑｜张帆 2026年的风险投资市场，正在上演一场前所未有的“AI大分流”。据Crunchbase数据，今年上半年全球初创企业融资额约5100亿美元，已超过去年全年；仅第一季度，约80%的风险投资便流向了AI公司。OpenAI单轮融资1220亿美元、估值冲上8520亿美元，Anthro...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-30 15:25</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4048024522553603?f=rss" target="_blank" rel="noopener">新石器4亿美元融资背后，物流小车行业走到哪一步了｜最前线</a>
+                    </h3>
+                    <p class="article-summary">10月20日，新石器宣布完成E轮近4亿美元融资，由博裕投资与某国家级基金联合领投，阿里巴巴AEF NextGen香港基金、广汽资本、纪源资本、淡马锡旗下Vertex Growth等参投。 这是今年以来国内自动驾驶领域最大单笔融资之一，新石器CEO余恩源在一场媒体沟通会中对外透露，原计划融2亿美元，最...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-30 13:49</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373190" target="_blank" rel="noopener">TRAE 开发者个人助理，打响 AI Coding 的下半场</a>
+                    </h3>
+                    <p class="article-summary">作者｜Cynthia 编辑｜郑玄 过去两年，AI Coding 最令人兴奋的时刻，大基本止步于代码生成的那一秒。 一句话生成页面，几分钟搭出原型，一个开发者用半天时间做完了过去需要一周才能完成的开发任务&hellip;&hellip; 但在这之后，即使某项单点开发任务获得五倍、十倍的提速，一个项目从...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-30 10:10</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4047734928259592?f=rss" target="_blank" rel="noopener">36氪首发丨前华为VP创业做AI原生电力资产运营，获宁德时代旗下基金数千万美元A轮融资</a>
+                    </h3>
+                    <p class="article-summary">作者&nbsp;|&nbsp;乔钰杰 编辑&nbsp;|&nbsp;袁斯来 本文约3600字，建议阅读9分钟 硬氪获悉，总部位于瑞典的AI原生电力资产运营商Green Voltis近日宣布完成数千万美元A轮融资，由宁德时代支持设立的美元基金Lochpine Capital 独家投资。 本轮融资资金将...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-30 09:31</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4046754792543106?f=rss" target="_blank" rel="noopener">AI进入细胞工厂，资本等的「大结果」快到了？</a>
+                    </h3>
+                    <p class="article-summary">文 | 刘凌果 编辑 | 海若镜 10月14日，诺贝尔化学奖得主David Baker团队连发两篇《Nature》，宣布AI能从头设计蛋白酶；9月以来，Claude、Gemini 4接连宣称具备发现、设计新酶的能力。 AI4S水温沸腾，以酶为关键工具的昔日顶流“合成生物”，能否复制AI制药的升温路径...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-30 09:05</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4047672620611844?f=rss" target="_blank" rel="noopener">36氪首发丨固态电池“卖铲人”获红榕、明势等押注，已完成数十吨交付</a>
+                    </h3>
+                    <p class="article-summary">图源/企业 本文约3500字，建议阅读9分钟 作者丨欧雪 编辑丨袁斯来 硬氪获悉，全固态电池关键原材料硫化锂生产商——四川全固态新材料有限公司（下称“四川全固态”）已完成数千万元A轮融资。本轮融资由红榕资本、明势创投领投，天泓投资、兴湘科创及老股东英诺天使跟投。拓深资本、启辰资本担任财务顾问，北京卓...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-30 08:15</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373154" target="_blank" rel="noopener">Google 母集团市值蒸发 5000 亿美元创纪录；苹果高管回应新 iPad mini 60Hz 刷新率；因电池问题，理想 MEGA 退一赔一｜极客早知道</a>
+                    </h3>
+                    <p class="article-summary">谷歌市值创纪录蒸发 5000 亿美元 AI 侵蚀营收 Alphabet Inc 股价一度下跌逾 13%，市值蒸发逾 5000 亿美元，单日市值缩水规模创公司纪录。此前公司公布的搜索和广告业务营收令人失望，加剧了投资者对人工智能（AI）威胁其核心业务的担忧。 这家谷歌母公司公布，第三季度不含合作伙伴分...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-30 08:12</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4047618190883331?f=rss" target="_blank" rel="noopener">8点1氪丨外交部回应三丽鸥取消Vivant联名；科创50指数创新低；上海一宜家餐厅开始实行“消费入座”，周二、周四有保安劝离</a>
+                    </h3>
+                    <p class="article-summary">今日热点导览 宇树回应净利润下滑：系算力、大模型方向研发投入增加所致 美国司法部调查英伟达收购HuggingFace 美国知名投资人质疑美联储利率决议 机器人也有KPI考核标准了，智元发布首个“工时KPI”Worken 成都国星宇航科技股份有限公司通过港交所上市聆讯 TOP3大新闻 外交部回应三丽鸥...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-10-29 18:59</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4046684874429576?f=rss" target="_blank" rel="noopener">36氪研究院 | 2026年中国自动驾驶行业发展研究报告</a>
+                    </h3>
+                    <p class="article-summary">自动驾驶是人工智能与汽车工业深度融合的战略性技术方向，也是中国智能网联新能源汽车战略性新兴产业中增长最为活跃的领域之一。当前，中国自动驾驶行业正处于从全域道路测试、示范应用迈向规模化商业落地的关键阶段。政策层面，2026年7月，首部针对L3、L4级自动驾驶系统的强制性国家标准（GB44721-202...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-29 15:09</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373086" target="_blank" rel="noopener">大众把三年在中国攒的家底，打包成了一颗「星」</a>
+                    </h3>
+                    <p class="article-summary">&nbsp; 头图来源：极客公园 10 月 28 日，合肥，大众汽车集团（中国）办了自己的第一次技术日。 这场发布会的主角叫「VEGA」，名字取自织女星，是大众在中国本土自研的一体化技术矩阵。它把整车平台、电子电气架构和高级驾驶辅助系统三大核心技术打包成了一套体系。 按大众的说法，它由此成为中国市场...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-29 08:05</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373085" target="_blank" rel="noopener">苹果发触屏笔记本，最高 11 万元；DeepSeek V5 模型代码现身；宇树首发财报，净利增 270%</a>
+                    </h3>
+                    <p class="article-summary">苹果发布首款触屏 MacBook Pro，顶配超 11 万元 北京时间 10 月 29 日，苹果发布全新 MacBook Pro，首次为 Mac 引入屏幕触控和灵动岛，并采用双层串联 OLED 技术的 PROLED XDR 显示屏。 新机提供 14 英寸和 16 英寸两种版本，搭载 M5 Pro 或...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-29 02:27</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373084" target="_blank" rel="noopener">「推翻」乔布斯的触屏 MacBook 来了，22999 元起</a>
+                    </h3>
+                    <p class="article-summary">搭载 PROLED XDR 显示屏的 MacBook Pro｜图片来源：Apple 2010 年 10 月 20 日，乔布斯在苹果「Back to the Mac」发布会上，给触屏笔记本下过一个结论：「我们做过大量用户测试，结果证明这行不通。触控表面不该竖着放。演示效果很好，但用一会儿你就会累，用久...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-28 16:04</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373066" target="_blank" rel="noopener">当即梦把剧本、导演和剪辑放进同一个工作室，我们看到了视频生成的下一步</a>
+                    </h3>
+                    <p class="article-summary">对于短剧创作者来说，最不缺的可能就是新的故事灵感。 在日常创作中，一个新的人物设定、一段有冲突的情节，甚至刷到的一条社会新闻，都可能成为下一部短剧的起点。 但短剧行业的生产节奏越来越快。团队可能同时推进多个项目，既要保证已有剧集的更新，又要不断寻找新题材、开发新故事；好创意从提出到真正变成作品，中间...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-28 15:37</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373059" target="_blank" rel="noopener">斯坦福的研究，红海的珊瑚，与一个中国模型</a>
+                    </h3>
+                    <p class="article-summary">2026 年 9 月 4 日，又一年柏林国际消费电子展 IFA 大会开幕，会展中心的创新舞台座无虚席。 IFA 2026 的开幕主题演讲题目是《个人 AI 时代：想象力的未来》，主讲人是 AMD 高级副总裁、计算与图形事业部总经理 Jack Huynh。 作为消费电子圈每年最重要的场合之一，台下所有...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-27 17:24</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373008" target="_blank" rel="noopener">iPhone Duo 裂屏，是苹果新 CEO 接班后第一次「大考」</a>
+                    </h3>
+                    <p class="article-summary">头图图片来源：iFixit2011 年 9 月 30 日，苹果递交了一份名为「Flexible electronic devices」的专利申请。它描述的是一台屏幕可以对折的设备，合起来能揣进口袋，靠传感器判断自己是开着还是合着。这份专利 2015 年 1 月获得授权，发明人一共六位，其中一位叫特努...</p>
+                </article>
+                </div></section>
+        <section id="奇思妙想" class="category-section">
+            <div class="category-header">
+                <h2>奇思妙想</h2>
+                <p class="category-desc">每天吸收些稀奇古怪的知识，期待引发后续的灵机一动。</p>
+            </div>
+            <div class="articles-grid">
+        
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-31 00:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793630" target="_blank" rel="noopener">海洋生物真的拿藤壶一点办法都没有吗？</a>
+                    </h3>
+                    <p class="article-summary">小星有鬼，自然博物写作者，在鸟兽草木间寻找真相和诗意 查看知乎原文 藤壶也就“欺负”下鲸鱼和海龟这些从陆地“二次下海”的动物，对于鱼类这些水中的原住民，藤壶其实也没那么困扰。 一、藤壶：披着“贝类”外衣的虾蟹亲戚 先说藤壶，虽然有着坚硬外壳，不过藤壶并非贝类这样的软体动物，它是一种甲壳动物，亲戚主要...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-31 00:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793638" target="_blank" rel="noopener">你知道历史上有哪些转折点？</a>
+                    </h3>
+                    <p class="article-summary">知乎用户，宁静慎独，讷于言，敏于行。 查看知乎原文 1905 年，德意志帝国巴伐利亚王国的柳特波德摄政王（Prince Regent Luitpold）签署法令，驱逐了一名非法移民。 这名非法移民 1869 年 3 月 14 日出生于巴伐利亚王国卡尔施塔特（Kallstadt）小镇，家族世代从事葡萄...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-31 00:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793645" target="_blank" rel="noopener">为什么有些人喝牛奶不舒服，却能接受酸奶？</a>
+                    </h3>
+                    <p class="article-summary">祥昊，风寒天欲雪。 查看知乎原文 你知道乳糖吧？ 对，就那个乳糖不耐受的乳糖，其实它在自然界是一种非常非常稀有的物质。 为啥说稀有呢？ 首先乳糖主要产自于哺乳动物的乳腺， 鸟爬鱼虫无长兄，要不起。 植物专业不对口，也不产。 所以日常想获得乳糖，来源只能是乳腺。 然而你有乳腺还不行， 合成乳糖主要靠半...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-10-31 00:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793651" target="_blank" rel="noopener">为什么现在的公交车乘坐时非常非常颠簸，八九十年代的公交车好像平稳很多很多？</a>
+                    </h3>
+                    <p class="article-summary">知乎用户，爱拍爱写的交通爱好者 查看知乎原文 这可能真的不是错觉，而是一个很实际的问题。 现在的国产公交车账面性能显然吊打 8、90 年代的国产公交车，道路铺装也好很多，但是论乘坐体验和车况却未必就是新车更好。 包括燃料电池、快速充换电池客车在内，其实国际上公交车的制造技术自上世纪末以来就没有革命性...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-30 17:57</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/117867" target="_blank" rel="noopener">本周看什么 | 最近值得一看的 9 部作品</a>
+                    </h3>
+                    <p class="article-summary">📅本周新预告《沙丘3》终极预告10月28日，电影《沙丘3》发布了终极预告，中国内地将于12月31日上映。丹尼斯·维伦纽瓦执导，提莫西·查拉梅、赞达亚、杰森·莫玛、弗洛伦丝·皮尤、丽贝卡·弗格森主演，誓 ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-30 14:59</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/116047" target="_blank" rel="noopener">App+1｜该吃药了：一片小药板，让吃药提醒变得轻松有趣</a>
+                    </h3>
+                    <p class="article-summary">它简单、稳定，也有意思，不会把按时吃药变成一个负担——而是一件看见了就随手去做、轻松愉快的小事。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-30 11:30</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/prime/story/zhuanglesha-261030" target="_blank" rel="noopener">《久坐健康指南》作者、运动健康领域创作者阿帅装了啥？</a>
+                    </h3>
+                    <p class="article-summary">编者按：@阿帅的健康笔记长期专注于运动健康领域的创作，发表了不少兼具实用性与科普性的文章，并著有付费栏目《久坐健康指南》，受到许多读者喜爱。本期《装了啥》邀请他分享运动、创作与工作中的心得，以及常用的 ...查看全文本文为会员文章，出自《单篇文章》，订阅后可阅读全文。</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-30 11:13</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/116435" target="_blank" rel="noopener">精确到秒的时间记录是怎样的？我的柳比歇夫法半年实践</a>
+                    </h3>
+                    <p class="article-summary">就像一个运动员无法预计自己能否取得金牌，但能控制自己投入于训练的时间一样，我们无法决定性地控制工作和生活中每一项事项的成功与否，但可以控制自己投入更多还是更少的时间。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-30 08:13</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/117827" target="_blank" rel="noopener">派早报：全球首款 Android XR 有线眼镜 XREAL AURA 发售等</a>
+                    </h3>
+                    <p class="article-summary">腾讯与 Visa 签署合作备忘录，Bose 有线消噪耳塞国行上市等。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-29 17:26</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/117791" target="_blank" rel="noopener">新玩意 254｜少数派的编辑们最近买了啥？</a>
+                    </h3>
+                    <p class="article-summary">编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。内容声明：《新玩意》栏目如含有 ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-29 17:05</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/117244" target="_blank" rel="noopener">如何成为不吃压力的「大心脏」？</a>
+                    </h3>
+                    <p class="article-summary">适合别人的抗压方式为什么不适合自己？你也该知道的抗压方法论查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-29 11:29</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/prime/story/how-to-analyze-health-data-with-agent" target="_blank" rel="noopener">让 Agent 读懂你的身体：数据处理篇</a>
+                    </h3>
+                    <p class="article-summary">在上一篇文章《让Agent读懂你的身体：数据获取篇》中，我花了很大的篇幅讲清楚了第一个问题：Agent怎样拿到数据。如果照着实践完，你大概率已经收获了一份存储了运动健康数据的SQLite、Markdo ...查看全文本文为会员文章，出自《单篇文章》，订阅后可阅读全文。</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-29 11:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/116686" target="_blank" rel="noopener">一日一技｜iPhone 恶意被锁，线上移除流程拆招</a>
+                    </h3>
+                    <p class="article-summary">如果你从网上购买过 Apple ID，又在自己的设备上登录，那就会存在一种风险：这类共享 ID 的密码掌握在卖家手里，卖家可以随时更改。本文就介绍了移除激活锁的全过程。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-10-29 08:26</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/117750" target="_blank" rel="noopener">派早报：Apple 推出触控款 MacBook Pro、华为发布多款新品等</a>
+                    </h3>
+                    <p class="article-summary">Google 推出世界模型 Genie 4、索尼推出手机主摄图像传感器 LYTIA 720 等。查看全文</p>
+                </article>
+                </div></section>
+    </main>
+
+    <footer>
+        <p>互联网新闻聚合 · 2026-10-31 · 数据来源：36Kr / 虎嗅 / 少数派 等</p>
+    </footer>
+</body>
+</html>
