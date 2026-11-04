@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互联网新闻聚合 - 2026-11-04</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+        }
+
+        /* 顶部导航 */
+        header {
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 0 24px;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 56px;
+        }
+
+        .site-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .site-date {
+            font-size: 13px;
+            color: #86868b;
+        }
+
+        nav {
+            display: flex;
+            gap: 4px;
+        }
+
+        .nav-item {
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #1d1d1f;
+            text-decoration: none;
+            transition: background 0.2s;
+            font-weight: 500;
+        }
+
+        .nav-item:hover {
+            background: #f5f5f7;
+        }
+
+        /* 主内容区 */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 32px 24px;
+        }
+
+        /* 分类区块 */
+        .category-section {
+            margin-bottom: 48px;
+        }
+
+        .category-header {
+            margin-bottom: 20px;
+        }
+
+        .category-header h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1d1d1f;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+
+        .category-desc {
+            font-size: 15px;
+            color: #86868b;
+        }
+
+        /* 文章网格 */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 16px;
+        }
+
+        /* 文章卡片 */
+        .article-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .article-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .article-source {
+            background: #f0f0f5;
+            color: #6e6e73;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 10px;
+        }
+
+        .article-time {
+            font-size: 12px;
+            color: #86868b;
+        }
+
+        .article-title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .article-title a {
+            color: #1d1d1f;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .article-title a:hover {
+            color: #0071e3;
+        }
+
+        .article-summary {
+            font-size: 14px;
+            color: #6e6e73;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 32px 24px;
+            color: #86868b;
+            font-size: 13px;
+            border-top: 1px solid rgba(0,0,0,0.06);
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .header-inner { flex-direction: column; height: auto; padding: 12px 0; gap: 8px; }
+            nav { flex-wrap: wrap; justify-content: center; }
+            .articles-grid { grid-template-columns: 1fr; }
+            .category-header h2 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div>
+                <div class="site-title">📰 互联网新闻聚合</div>
+            </div>
+            <nav>
+                <a href="#互联网资讯" class="nav-item">互联网资讯</a>
+<a href="#奇思妙想" class="nav-item">奇思妙想</a>
+
+            </nav>
+            <div class="site-date">更新于 2026-11-04 12:59</div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="互联网资讯" class="category-section">
+            <div class="category-header">
+                <h2>互联网资讯</h2>
+                <p class="category-desc">整合互联网资讯媒体，偏重于前端科技、电子硬件、手机应用。</p>
+            </div>
+            <div class="articles-grid">
+        
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-04 11:55</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261104-9940650" target="_blank" rel="noopener">特朗普两子间接持股矿业公司 拟以26亿新元估值赴美上市</a>
+                    </h3>
+                    <p class="article-summary">美国总统特朗普两名儿子间接持股的一家矿业公司，计划明年在美国上市，估值达20亿美元（约26亿新元）。这家公司的钨矿项目有望获得美国政府高达16亿美元融资支持，引发民主党议员对特朗普家族潜在利益冲突的质疑。《华尔街日报》报道，这家计划更名为Kaz Resources的矿业公司，拟通过直接上市方式在美国...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-04 11:50</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4054909861942149?f=rss" target="_blank" rel="noopener">WISE 2026 特别策划 - 我们的创业梦</a>
+                    </h3>
+                    <p class="article-summary">WISE 2026 的最后小时，不属于已经成功的公司，属于还没被听见的人。 一、活动介绍 每一个后来被时代叫响的名字，都有过一段无人回应的自我介绍。 这个阶段里，产品可能还不完整，团队可能只有几个人，用户屈指可数，商业模式也远没有被验证。能拿出来的，或许只有一个真实的问题、一个刚刚做出的产品，以及一...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-04 11:44</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261104-9944113" target="_blank" rel="noopener">【美国中期选举】美媒：民主党料夺众议院 至少拿下218席</a>
+                    </h3>
+                    <p class="article-summary">美国媒体预测，民主党预计以超过210个议席赢得美国众议院多数地位，从共和党手中夺取控制权。英国广播公司（BBC）引述美国哥伦比亚广播公司（CBS）预测报道，民主党在星期二（11月3日）的中期选举中将赢得国会众议院多数席位，料拿下至少218席。 总统特朗普的共和党预计至少赢得160席。美国选举预测机构...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-04 11:36</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4054890923824260?f=rss" target="_blank" rel="noopener">WISE 2026 特别策划 - Re：Frame者征集</a>
+                    </h3>
+                    <p class="article-summary">Re：Frame 是36氪在「WISE 2026商业之王」中推出的特别策划环节，是一项面向创新者的年度案例征集与现场发布计划。 为什么发起「Re：Frame者征集」 今天，各行各业都在谈创新。但是真正改变一个行业的创新，可能最初往往并不显眼。它可能只是重新提出了一个问题，改变了一种交付方式，建立了一...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-04 11:32</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261104-9944003" target="_blank" rel="noopener">【美国中期选举】民主党又有战果 佐治亚州迎美国史上首个黑人女性州长</a>
+                    </h3>
+                    <p class="article-summary">美国媒体预测，民主党人波特姆斯在中期选举中当选佐治亚州州长，成为美国历史上首位黑人女性州长。 美国有线电视新闻网（CNN）和美国全国广播公司（NBC News）都预测，波特姆斯（Keisha Lance Bottoms）在星期二（11月3日）的中期选举中，击败共和党对手杰克逊（Rick Jackso...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-04 11:31</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261104-9943915" target="_blank" rel="noopener">特朗普：尚无立即打击伊朗的计划</a>
+                    </h3>
+                    <p class="article-summary">美国总统特朗普告诉英国媒体，美国目前尚无立即打击伊朗的计划，但随时严阵以待。 特朗普星期二（11月3日）接受《金融时报》电话采访时，做出这一表态。他对目前美伊对峙的局势感到满意，并称美方正在得到自己想要的一切。 针对以色列总理内塔尼亚胡曾暗示或在本周晚些时候打击伊朗，特朗普回应称：“我准备好了，我们...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-04 10:47</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261104-9943761" target="_blank" rel="noopener">【美国中期选举】众议院选战谁胜出？各州最新胜选名单一览</a>
+                    </h3>
+                    <p class="article-summary">美国中期选举结果陆续揭晓，民主党和共和党分别在多个众议院选区胜出，众议院控制权最终花落谁家仍有待揭晓。 以下是截至美国东部时间11月3日晚上9时33分（新加坡时间11月4日上午10时33分），已知的众议院选举胜选名单：民主党纽约州第14选区：奥卡西奥—科尔特斯（Alexandria Ocasio-C...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-04 10:46</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4054849345672326?f=rss" target="_blank" rel="noopener">36氪官方股票舆情交流群开放加入，抢先掌握A股一手资讯！</a>
+                    </h3>
+                    <p class="article-summary">每天开盘前，你会关注哪些市场消息？ 上市公司有没有新的业务进展？行业里出现了哪些值得关注的变化？市场热点背后，又有哪些企业动态值得留意？ 对于关注A股市场的人来说，及时获取信息、了解行业动态，往往是观察市场的重要一环。 为此，36氪企业全情报持续运营官方股票舆情交流群，希望为关注资本市场、上市公司和...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-04 10:34</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261104-9943673" target="_blank" rel="noopener">【美国中期选举】谁赢得参议院席位？最新结果一览</a>
+                    </h3>
+                    <p class="article-summary">美国中期选举陆续揭晓结果。民主党在多个关键州的参议院选举中取得胜利，并从共和党手中夺下北卡罗来纳州的参议院席位。共和党则守住佛罗里达州、西弗吉尼亚州和肯塔基州等地的席位。参议院最终控制权仍未确定。 以下是截至美国东部时间11月3日晚上9时10分（新加坡时间11月4日上午10时10分），已知的参议院选...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-04 10:32</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261104-9943640" target="_blank" rel="noopener">【美国中期选举】民主党料夺众议院控制权 制衡特朗普权力</a>
+                    </h3>
+                    <p class="article-summary">彭博社报道，据美国选举预测机构“决策台总部”（Decision Desk HQ）预测，民主党将夺得众议院的控制权，从而在特朗普重返白宫两年后，首次对他的权力形成实质性制衡。其他新闻机构尚未就众议院多数席位的归属做出预测。</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-04 10:22</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261104-9943489" target="_blank" rel="noopener">韩国军方：朝鲜发射不明飞行器</a>
+                    </h3>
+                    <p class="article-summary">美国举行中期选举之际，韩国军方称朝鲜向半岛东部发射不明飞行器。 韩联社报道，韩国联合参谋本部（联参）星期三（11月4日）报告这一消息。联参正在分析飞行器的具体参数和射程等信息。报道指，如果飞行器证实为弹道导弹，这将是朝鲜相隔四天再次射弹。朝中社上星期天（1日）报道，朝鲜导弹总局前一天发射携带集束弹头...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-04 09:47</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261104-9943335" target="_blank" rel="noopener">【美国中期选举】CNN出口民调：选民普遍不满特朗普表现</a>
+                    </h3>
+                    <p class="article-summary">美国中期选举投票接近尾声，美媒对全国选民民调的初步结果显示，人们对国家现状、经济状况和总统特朗普的执政表现普遍感到不满。 美国有线电视新闻网（CNN）星期二（11月3日）晚发布的选民民调全国初步结果显示，全美范围约四分之三的选民对国家目前的发展方向感到不满，其中约四成甚至感到愤怒。 导致这种情绪的因...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-04 09:33</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4054776980378758?f=rss" target="_blank" rel="noopener">硬氪首发丨快手系AI芯片公司凌川科技完成10亿元B轮融资，3D芯片已回片，明年规模出货</a>
+                    </h3>
+                    <p class="article-summary">作者&nbsp;|&nbsp;邱晓芬 编辑&nbsp;|&nbsp;袁斯来 硬氪获悉，人工智能芯片公司「凌川科技」近日完成10亿元B轮融资，本轮融资将主要用于下一代芯片研发与量产及全球市场拓展。 本轮由亦庄国投屹唐盛和基金、启明创投、朝晖资本联合领投，知名投资机构国泰海通开元、华控投资、国寿长三角科...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-04 09:33</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4054776330900353?f=rss" target="_blank" rel="noopener">最前线| 拓竹发布新一代3D打印机，9个独立打印头、最快6秒切换</a>
+                    </h3>
+                    <p class="article-summary">11月3日，拓竹发布第三代旗舰3D打印机 H3C，标准套装起售价16499元，首发期间直降1000元。 作为拓竹新一代旗舰产品，H3C此次升级的重点不再局限于打印速度，而是围绕多材料打印展开。新机搭载Swaptek™九头闪切系统、顶置一体化AMS 3H供料系统以及可变线径挤出机三大核心技术。 H3C...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-04 09:17</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261104-9943101" target="_blank" rel="noopener">一年内两起重大铁路事故 西班牙交通部长辞职</a>
+                    </h3>
+                    <p class="article-summary">西班牙发生造成69人死亡的火车相撞事故后，交通部长普恩特递交辞呈，并退出即将举行的大选。 法新社报道，普恩特星期二（11月3日）在国会听证会结束后宣布辞职，同时退出定于11月29日举行的提前立法选举。 在此之前，普恩特曾多次否认辞职打算。他在听证会之前的记者会上介绍改善铁路安全的措施，并称政府会不懈...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-04 09:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4047812928518660?f=rss" target="_blank" rel="noopener">用“DNA活字印刷术”给AI造生物数据，「涌源合生」获5000万天使轮融资｜36氪首发</a>
+                    </h3>
+                    <p class="article-summary">文｜胡香赟 编辑｜海若镜 36氪获悉，涌源合生科技（深圳）有限公司（下称“涌源合生”）近期已完成5000万元天使轮融资。本轮融资由顺为资本、云沐资本联合投资。本轮募集资金将用于生产高价值数据集、扩大自研创新的DNA合成技术产能和进一步建设数据铸造基础设施。 涌源合生定位“AI+生物领域的数据铸造平台...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-11-04 08:28</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373427" target="_blank" rel="noopener">国行版苹果 AI 开始测试；ChatGPT 搜索量已达到谷歌 20%；Seedance 被曝五成收入来自海外｜极客早知道</a>
+                    </h3>
+                    <p class="article-summary">国行 Apple 智能开始测试：iOS 27.3 首个开发者 Beta 版已推送 11 月 4 日，苹果向开发者推送 iOS 27.3 首个 Beta 版，国行 iPhone 用户开始测试首批 Apple 智能功能，包括实时翻译、照片消除、写作工具和通知摘要等。国行 Apple 智能与阿里巴巴达成合...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-04 08:01</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4054687391143044?f=rss" target="_blank" rel="noopener">8点1氪丨豆包用户数被红果超越；iPhone Duo屏幕开裂争议，特努斯首度回应；美股要“通宵”了，纳斯达克将全天交易23小时</a>
+                    </h3>
+                    <p class="article-summary">今日热点导览 国际奥委会确认中国不申办2036年奥运会 中际旭创总市值跌破6000亿，高盛下调盈利预测 网传昆仑芯IPO推迟，百度否认市场传闻 遭证监会立案调查，“好想来”母公司股价大跌 钟薛高“复活”单支低至7.5元 特朗普放话力保马斯克 TOP3大新闻 抖音、红果短剧、豆包、今日头条座次更迭，红...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-11-03 19:54</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373424" target="_blank" rel="noopener">拿下近亿美元融资后，他们造了个开放动态真实世界的「行动伙伴」</a>
+                    </h3>
+                    <p class="article-summary">作者｜苏子华 编辑｜郑玄 &nbsp; 博尔赫斯写过一则著名的寓言。一个帝国的制图师们绘制了一张与领土等大的地图，精确到每一寸土地、每一条河流。后代人发现这张地图毫无用处，把它弃置在荒野中，任其腐烂。 真正在一个地方走路的人，靠的从来不是一张一比一的图纸，而是脚底的感觉、眼睛的判断，以及走错了再调整...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-03 18:02</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4053844064670600?f=rss" target="_blank" rel="noopener">给一个人的邀请函丨来WISE2026，把「了不起」做成动词！</a>
+                    </h3>
+                    <p class="article-summary">&nbsp; 一个人，做成一件事。 不知道你有没有觉得：一个人做事的时候AI用得越顺手，瓶颈往往却越真实。 一方面，工具确实把门槛压低了：方案、设计、应用，一个人借AI也能做出专业水准的交付； 另一方面，真正卡住一个人的，从来不是工具——而是从想到到收到，中间隔着的那道生死线。 从「0」到「了不起」...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-03 16:28</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4053733300196487?f=rss" target="_blank" rel="noopener">独家 | Seedance 海外收入占比已达 50%，国内市场腾讯、B站等互联网企业为主要客户</a>
+                    </h3>
+                    <p class="article-summary">近期《智能涌现》独家获悉，字节跳动旗下视频生成模型 Seedance 的海外收入占比已达到 50%。据接近火山引擎人士透露，过去半年，Seedance 在海外市场的收入增长近 5 倍。目前，海外已经成为 Seedance 模型的重要战场。 今年 2 月，Seedance 2.0 曾因生成内容涉及好莱...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-03 16:23</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4053753398989703?f=rss" target="_blank" rel="noopener">2026年了，为什么还没有APP帮我找厕所？</a>
+                    </h3>
+                    <p class="article-summary">140年前，世界上第一台实用洗碗机诞生。 发明它的是约瑟芬·科克伦，一位经常需要在家中清洗珍贵瓷具的女性。将生活经验和生活观察变成发明或专利——这件事情，女性一直在做：雨刮器、咖啡过滤器、修正液……它们都是这么来的。 占据近一半世界人口，女性别具一格的观察视角创造着造福人类的产品。 在AI时代，这一...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-11-03 15:11</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373399" target="_blank" rel="noopener">心言巴布「Bubbo 1」：一台机器人，如何成为家人</a>
+                    </h3>
+                    <p class="article-summary">&nbsp; 头图来源：心言机器人 2026 年 10 月 29 日，心言机器人正式发布具身家庭智能体「巴布（Bubbo 1）」。 这台毛绒外形的机器人，基于心言自研的 Bubbo OS，主打「伙伴式交互」：它不是一台等人发号施令的家电，而是一个会主动走近、主动回应的家庭成员。产品即日起在京东等官方...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-11-03 08:40</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373358" target="_blank" rel="noopener">马斯克回应 Grok Bot 额度消耗过快：服务成本高到难以为继；Altman 称个人内存浪费遭全网声讨；《影之刃零》销量破 400 万份</a>
+                    </h3>
+                    <p class="article-summary">Anthropic 更新 IPO 招股书：第三季度营收近 170 亿美元，算力承诺达 8954 亿美元 11 月 2 日，Anthropic 向美国证券交易委员会提交更新后的 S-1 招股文件，首次补充截至今年 9 月底的第三季度财务数据。 Anthropic 第三季度营收达到 169.6 亿美元，...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-11-02 08:27</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373252" target="_blank" rel="noopener">​传苹果逐步淘汰非触控 MacBook Pro；谷歌 AI 被指正切断互联网流量；赛力斯：问界全面进入欧洲市场</a>
+                    </h3>
+                    <p class="article-summary">&nbsp; 苹果 CEO：不会为了做 AI 而做产品 苹果 CEO 约翰&middot;特努斯近日接受采访时，为苹果当前在人工智能领域的布局进行辩护。过去几年，外界常认为苹果在 AI 赛道落后，尤其是苹果推迟推出更强版本的 Siri，该功能直到今年夏天才正式上线。 特努斯是苹果资深高管，9 月初正...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-11-01 18:03</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373249" target="_blank" rel="noopener">个人灵光 2.0 实测：个人 AI 助理的机会和门槛｜AI 上新</a>
+                    </h3>
+                    <p class="article-summary">作者｜汤一涛 编辑｜靖宇 10 月 21 日的 Meta 财报会上，扎克伯格披露了一组关于个人智能体 Muse 的关键数据：超过 1000 万人设置了 Muse，购物是 Muse 最常见的用途，超过四分之一的用户在用它买东西，平均客单价超过200 美元；上线第一周，Muse 交易量便超出了预期，Me...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-11-01 17:57</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373248" target="_blank" rel="noopener">DeepSeek，怎么就变成了一条「大肥鱼」</a>
+                    </h3>
+                    <p class="article-summary">作者｜Moonshot 编辑｜靖宇 最近，B 站评论区闹起了「鱼灾」。 先是有人开了个「Claude 大小姐在运营」的账号，让 AI 负责选题、制作和运营。第二天，「DeepSeek 鲸鱼娘在运营」跟着上线，第一条视频播放量就超过了 200 万。 由于目前 DeepSeek 暂无生图功能，该账号形象...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-11-01 08:29</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373243" target="_blank" rel="noopener">DeepSeek 公布 Super Agent 架构；苹果超越英伟达，重回市值第一；传 Meta 与傅利叶打造 Muse 机器人</a>
+                    </h3>
+                    <p class="article-summary">​DeepSeek 发布全新 Agent 架构 10 月 31 日晚间，DeepSeek Harness 团队在官方公众号发表技术文章《Super-agent 设计探索：迈向更自主的 Agent 系统》。 DeepSeek 表示，模型能力提升催生了新的应用形态，个人助手（Personal Agent...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-31 08:03</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373220" target="_blank" rel="noopener">苹果官宣 Apple 智能接入阿里千问；DeepSeek 完成第二轮 1055 亿元融资，估值达 6155 亿元；英特尔股价开盘跌超 30%｜极客早知道</a>
+                    </h3>
+                    <p class="article-summary">国行 Apple 智能确定上线时间：11 月开放测试，千问接入 Siri 10 月 31 日，苹果宣布，国行 Apple 智能首批功能将于 11 月 4 日随 iOS 开发者 Beta 版开放测试，12 月随 iOS 27.3 正式面向用户推出。首批功能包括实时翻译、写作工具、照片消除、智绘表情和通...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-10-31 06:26</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373238" target="_blank" rel="noopener">国行 Apple 智能官网正式上线：千问接入，11 月推送</a>
+                    </h3>
+                    <p class="article-summary">头图图片来源：Apple10 月 31 日，苹果中国官网的 Newsroom 发布新闻稿《Apple 智能即将登陆中国》，给了一张具体的时间表：11 月 4 日起，首批 Apple 智能功能随最新的 iOS 开发者 Beta 版开放测试；12 月 iOS 27.3 正式发布时，面向中国用户推出。苹果...</p>
+                </article>
+                </div></section>
+        <section id="奇思妙想" class="category-section">
+            <div class="category-header">
+                <h2>奇思妙想</h2>
+                <p class="category-desc">每天吸收些稀奇古怪的知识，期待引发后续的灵机一动。</p>
+            </div>
+            <div class="articles-grid">
+        
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-04 10:41</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/118404" target="_blank" rel="noopener">国行 Apple 智能上手：这些功能已经准备好</a>
+                    </h3>
+                    <p class="article-summary">iOS 27.3 Beta 带来了姗姗来迟的国行版 Apple 智能，这些细节你值得了解。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-04 08:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/118402" target="_blank" rel="noopener">派早报：Apple 智能国行版开放测试、拓竹发布 H3C 3D 打印机等</a>
+                    </h3>
+                    <p class="article-summary">Surface 鼠标第 2 代国行预售，Windows 11 优化 8 GB 内存表现等。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-11-04 07:01</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793728" target="_blank" rel="noopener">在自然科学的历史上，最荒诞的事件是什么？</a>
+                    </h3>
+                    <p class="article-summary">知乎用户，宁静慎独，讷于言，敏于行。 查看知乎原文 18-19 世纪，英国海军和主流医学界认为，坏血病是由于海员“懒惰、消极、意志消沉”以及吃盐渍肉引起的，因此长期采用鞭笞和强迫劳动来“治疗”坏血病。 尽管早在 1747 年，英国海军医官詹姆斯·林德（James Lind）通过临床对比实验，证明柠檬...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-11-04 07:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793729" target="_blank" rel="noopener">为什么狗的嗅觉这么灵敏却不怕臭？</a>
+                    </h3>
+                    <p class="article-summary">苏澄宇，自然科学/分享动物们的小秘密/Animalonearth 查看知乎原文 人的鼻子里大约有 500-600 万个嗅觉受体，狗最多可以有 3 亿个，是人的 50 倍。狗大脑中专门处理气味的区域，按比例算比人大 40 倍[1]。 数字摆在这里，如果一个垃圾桶让你嫌臭，同一个垃圾桶似乎应该让狗直接倒...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-11-04 07:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793732" target="_blank" rel="noopener">我们永远无法知道死后是怎样的世界吗？</a>
+                    </h3>
+                    <p class="article-summary">芯图工坊，埋骨何须桑梓地，人生无处不青山 查看知乎原文 2022 年，Nir Lahav 和 Zachariah A. Neemeh 的研究团队的论文 《A Relativistic Theory of Consciousness 》为我们打破了认知的僵局 。 只要我们依然认为意识是一个绝对的二元对...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-11-04 06:59</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9793733" target="_blank" rel="noopener">瞎扯 · 如何正确地吐槽</a>
+                    </h3>
+                    <p class="article-summary">瞎扯 · 去荒岛只能带一本书，你会带哪本？为什么？ 知乎日报 查看知乎原文 Q：去荒岛只能带一本书，你会带哪本？为什么？ @Kenny &nbsp;：我也不知道，但我想，应该是最厚最大的那本吧，烧火能烧个把月的最好了 Q：中国古代有没有很猎奇的画？ @铁根 &nbsp;：这是一位唐朝小朋友康景宗未完...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-03 22:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/118263" target="_blank" rel="noopener">一眼的熟悉，满眼的惊喜：新款 iPad mini 首发体验</a>
+                    </h3>
+                    <p class="article-summary">更轻、更薄、更好「看」，依然是那台纯粹的 iPad mini。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-03 15:12</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/118317" target="_blank" rel="noopener">社区速递 164 | 1500 元圆梦昔日卡皇与派友们做的 AI 平替</a>
+                    </h3>
+                    <p class="article-summary">手工压花器、二手 TITAN V，以及派友们用开源项目与 AI Coding 替代付费订阅的讨论。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-03 10:53</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/118211" target="_blank" rel="noopener">Disc Image Studio：你想不想在光盘上「画」点什么？</a>
+                    </h3>
+                    <p class="article-summary">把喜欢的图烧进 CD 里，你也可以。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-03 08:18</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/118232" target="_blank" rel="noopener">派早报：猛玛推出探境 3 直播相机、美团发布 LongCat-2.5 模型等</a>
+                    </h3>
+                    <p class="article-summary">Raspberry Pi 再次上调 16 GB 产品价格、Keychron 推出 Q19 HE 8K 磁轴键盘等。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-02 17:57</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/118240" target="_blank" rel="noopener">派评 | 近期值得关注的 App</a>
+                    </h3>
+                    <p class="article-summary">能看见、更聪明的 Android 智能点击器，纯纯写作迎来 iOS 版本，Photon Cam 为 iPhone 旧机型解锁相机新功能等。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-02 15:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/118122" target="_blank" rel="noopener">TDS REVIEW｜Apple AirPods 5 半入耳降噪真无线耳机体验</a>
+                    </h3>
+                    <p class="article-summary">这篇文章是TDSStudio在少数派上的第34篇文章，依然是全平台首发。时隔两年，我们又回来写AirPods半入耳型号了。在26年的苹果秋季event上，AirPods5给我们最大的印象其实还是主动降 ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-02 11:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/115662" target="_blank" rel="noopener">Xnip 十周年：长截图的新生，也是新的起点</a>
+                    </h3>
+                    <p class="article-summary">十年是一个里程碑，也是新的起点。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-01 15:02</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/116991" target="_blank" rel="noopener">怀旧手记｜夏普 Telios：20 多年前，Handheld PC 中的「少数派」</a>
+                    </h3>
+                    <p class="article-summary">Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质的文章，展示来自用户的最真实的体验和观点。文章代表作者个人观点 ...查看全文</p>
+                </article>
+                </div></section>
+    </main>
+
+    <footer>
+        <p>互联网新闻聚合 · 2026-11-04 · 数据来源：36Kr / 虎嗅 / 少数派 等</p>
+    </footer>
+</body>
+</html>
