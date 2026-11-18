@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互联网新闻聚合 - 2026-11-18</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+        }
+
+        /* 顶部导航 */
+        header {
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 0 24px;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 56px;
+        }
+
+        .site-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .site-date {
+            font-size: 13px;
+            color: #86868b;
+        }
+
+        nav {
+            display: flex;
+            gap: 4px;
+        }
+
+        .nav-item {
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #1d1d1f;
+            text-decoration: none;
+            transition: background 0.2s;
+            font-weight: 500;
+        }
+
+        .nav-item:hover {
+            background: #f5f5f7;
+        }
+
+        /* 主内容区 */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 32px 24px;
+        }
+
+        /* 分类区块 */
+        .category-section {
+            margin-bottom: 48px;
+        }
+
+        .category-header {
+            margin-bottom: 20px;
+        }
+
+        .category-header h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1d1d1f;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+
+        .category-desc {
+            font-size: 15px;
+            color: #86868b;
+        }
+
+        /* 文章网格 */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 16px;
+        }
+
+        /* 文章卡片 */
+        .article-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .article-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .article-source {
+            background: #f0f0f5;
+            color: #6e6e73;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 10px;
+        }
+
+        .article-time {
+            font-size: 12px;
+            color: #86868b;
+        }
+
+        .article-title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .article-title a {
+            color: #1d1d1f;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .article-title a:hover {
+            color: #0071e3;
+        }
+
+        .article-summary {
+            font-size: 14px;
+            color: #6e6e73;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 32px 24px;
+            color: #86868b;
+            font-size: 13px;
+            border-top: 1px solid rgba(0,0,0,0.06);
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .header-inner { flex-direction: column; height: auto; padding: 12px 0; gap: 8px; }
+            nav { flex-wrap: wrap; justify-content: center; }
+            .articles-grid { grid-template-columns: 1fr; }
+            .category-header h2 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div>
+                <div class="site-title">📰 互联网新闻聚合</div>
+            </div>
+            <nav>
+                <a href="#互联网资讯" class="nav-item">互联网资讯</a>
+<a href="#奇思妙想" class="nav-item">奇思妙想</a>
+
+            </nav>
+            <div class="site-date">更新于 2026-11-18 14:04</div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="互联网资讯" class="category-section">
+            <div class="category-header">
+                <h2>互联网资讯</h2>
+                <p class="category-desc">整合互联网资讯媒体，偏重于前端科技、电子硬件、手机应用。</p>
+            </div>
+            <div class="articles-grid">
+        
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-18 12:36</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261118-10017110" target="_blank" rel="noopener">特朗普：美菲正扩大防务合作 不担心南中国海局势</a>
+                    </h3>
+                    <p class="article-summary">正在菲律宾马尼拉访问的美国总统特朗普说，美国和菲律宾正在扩大防务合作，但他并不担心主权争议激烈的南中国海局势。 路透社报道，特朗普星期三（11月18日）与菲律宾总统小马可斯举行双边会谈时，做出上述表述。特朗普在会谈开始时形容，美国与菲律宾的同盟关系“处于前所未有的最佳状态”。 他也透露，美菲两国接下...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-18 12:25</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261118-10016894" target="_blank" rel="noopener">佩尔托拉当选阿拉斯加州参议员 民主党共拿下参议院56席</a>
+                    </h3>
+                    <p class="article-summary">美国中期选举参议员选举最后一席的结果出炉，阿拉斯加州民主党籍候选人佩尔托拉击败共和党对手沙利文，不仅让阿拉斯加州由红转蓝，也使民主党在参议院的优势扩大至56席对44席。美联社星期三（11月18日）宣布，佩尔托拉以50.12%的得票率，击败获得45.80%选票的现任参议员沙利文，赢下了这最后揭晓结果的...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-11-18 12:12</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/374125" target="_blank" rel="noopener">影视飓风、Manus、影石、OPPO......极客公园创新大会 2027 嘉宾阵容更新！</a>
+                    </h3>
+                    <p class="article-summary">首批嘉宾公布以来，IF 2027 收到了超出预期的关注， 短短几天早鸟票已经售罄。 今年 IF 大会的主题是：「Revaluation 价值，另有答案」。 过去一年，AI 正在以超出预期的速度改变世界。变化越来越快，但真正重要的问题并没有变得更简单：下一轮机会在哪里？哪些行业正在发生根本性的变化？当...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-18 11:48</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261118-10016711" target="_blank" rel="noopener">英国下议院通过移民改革法案 永居等待期拟延长至10年</a>
+                    </h3>
+                    <p class="article-summary">英国工党政府具争议性的移民改革法案在下议院获得通过，成功避免后座议员倒戈，暂时化解政治危机，让英国首相伯纳姆和内政部长马哈茂德松了一口气。彭博社报道，英国下议院星期二（11月17日）以290票赞成、94票反对，通过了《移民与庇护法案》，法案接下来将送交上议院进一步审议。根据改革方案，移民申请永久居留...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-18 10:15</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261118-10016120" target="_blank" rel="noopener">日本京都拟向非居民收更高巴士车资 应对过度旅游</a>
+                    </h3>
+                    <p class="article-summary">为应对游客过多、影响居民日常生活的‘过度旅游’现象，日本京都计划对市内公共巴士车资实行“双重定价”，向非本地居民收取高于市民的票价。日本共同社报道，京都市政府星期二（11月17日）公布了这项条例草案。当局称，这是日本首项为应对‘过度旅游’而推出的公共交通措施。根据拟议的双重定价制度，非本地居民的成人...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-18 09:52</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261118-10015969" target="_blank" rel="noopener">AI时代重新思考人性 “人类”获选《剑桥词典》年度词汇</a>
+                    </h3>
+                    <p class="article-summary">在人工智能（AI）迅猛发展、甚至被警告可能毁灭人类的时代背景下，“人类”（Human）被评选为2026年《剑桥词典》年度词汇。《剑桥词典》星期三（11月18日）宣布了这个年度词汇。这个词在词典中的定义为“拥有与神明、动物或机器相对的、人所具备的品质、缺点与情感”。 剑桥大学出版社董事会成员伍德沃德（...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-18 09:15</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261118-10015849" target="_blank" rel="noopener">巴基斯坦男子密谋刺杀特朗普 在美被判监逾27年</a>
+                    </h3>
+                    <p class="article-summary">一名受到伊朗指使、密谋刺杀美国总统特朗普和其他知名美国政要的巴基斯坦男子，被美国法官判处超过27年监禁。 路透社报道，美国司法部星期二（11月17日）宣布，48岁的巴基斯坦籍男子默钱特（Asif Merchant）当天早些时候在纽约布鲁克林联邦法院，因企图实施跨国恐怖主义行为以及买凶杀人罪，被联邦地...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-18 09:13</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261118-10015808" target="_blank" rel="noopener">美中俄峰会前夕 高市早苗与特朗普短暂会晤重申紧密合作</a>
+                    </h3>
+                    <p class="article-summary">在美国总统特朗普本星期晚些时候与中国及俄罗斯元首举行备受瞩目的三边峰会前夕，日本首相高市早苗在出席马尼拉国际会议之际，与特朗普进行了单独交流，寻求重申美日牢固的同盟关系。彭博社引述日本外务省声明报道，高市早苗和特朗普星期二（11月17日）在菲律宾总统小马可斯主持的晚宴上，进行了短暂交谈，并确认将继续...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-18 09:02</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4074564838659207?f=rss" target="_blank" rel="noopener">硬氪首发丨玻璃基板装备企业获近亿元融资，英诺基金连续三轮加注</a>
+                    </h3>
+                    <p class="article-summary">作者&nbsp;|&nbsp;邱晓芬 编辑&nbsp;|&nbsp;袁斯来 硬氪获悉，玻璃基板装备企业「深微芯创」连续完成三轮融资，累计近亿元。投资方包括深产投及老股东英诺基金等。其中，英诺基金连投三轮。本轮融资将主要用于核心装备研发、市场拓展及团队建设。 「深微芯创」成立于2026年，主要面向先进...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-18 09:01</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4074562529645445?f=rss" target="_blank" rel="noopener">英伟达季度营收破千亿美金，但昨日的世界已经远去</a>
+                    </h3>
+                    <p class="article-summary">作者&nbsp;|&nbsp;邱晓芬 编辑&nbsp;|&nbsp;袁斯来 在黄仁勋离职卷起的风暴眼中，英伟达交出了近年来可能最受瞩目的财报。 北京时间11月18日凌晨，英伟达发布2027财年第三季度财报。这是原CFO Colette Kress接任临时CEO以来，英伟达的首份成绩单。 财报数据显示...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-11-18 08:48</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/374109" target="_blank" rel="noopener">OpenAI 发布 GPT-6.2 Astra 和 Sol；王兴兴：家用机器人或将迎来技术突破；《GTA 6》开发商批评 AI 公司放任游戏仿制行为｜极客早知道</a>
+                    </h3>
+                    <p class="article-summary">OpenAI 发布 GPT-6.2 Astra 和 Sol，强化编程、电脑操作与专业工作 OpenAI 正式发布 GPT-6.2 Astra 和 GPT-6.2 Sol 两款模型，重点提升专业任务、Coding、电脑操作和执行效率，并降低部分使用成本。新模型将应用于 ChatGPT Work、Cod...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-18 08:34</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261118-10015737" target="_blank" rel="noopener">回应美驻巴林基地遇袭 美军空袭霍尔木兹海峡伊朗岛屿</a>
+                    </h3>
+                    <p class="article-summary">在伊朗伊斯兰革命卫队宣布袭击美国使用的巴林军事基地数小时后，美军对位于霍尔木兹海峡的伊朗格什姆岛（Qeshm Island）发动了空袭作为回应。 一名不愿具名的美国官员星期二（11月17日）向法新社证实，美军战机“使用精确制导弹药，打击了格什姆岛上的革命卫队导弹发射场”，以回应伊朗“针对美方人员与资...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-18 08:06</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261118-10015649" target="_blank" rel="noopener">英伟达董事长：董事会无意让黄仁勋复职</a>
+                    </h3>
+                    <p class="article-summary">尽管有多位硅谷大佬的声援，身陷丑闻的人工智能晶片巨头英伟达（Nvidia）联合创始人黄仁勋也表明自己已准备好重返岗位，但公司董事长在财报电话会议上明确表示，董事会不打算让他复任首席执行官。法新社报道，英伟达董事会主席琼斯（Harvey Jones）在星期二（11月17日）的财报会议上说：“英伟达董事...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-18 08:04</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4074508571104132?f=rss" target="_blank" rel="noopener">8点1氪丨李飞飞率World Labs正式加入AMD，苏姿丰主导庆祝仪式；360集团副总裁涉及大额贪腐被警方带走调查；高盛预测金价2年后才能重回高位</a>
+                    </h3>
+                    <p class="article-summary">今日热点导览 李飞飞率World Labs正式加入AMD，苏姿丰主导庆祝仪式 京东集团：第三季度营收3096亿元，同比增长3.5% OPPO Reno17系列正式发布 Siri AI每日限额，订阅后可获得最高20倍的额外使用额度 红果短剧有望推电视端App TOP 3大新闻 黄仁勋公开表态：愿意重新...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-18 07:45</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com/news/world/story20261118-10015594" target="_blank" rel="noopener">以反对派撤换内坦亚胡盟友 推举卡哈纳任国会议长</a>
+                    </h3>
+                    <p class="article-summary">以色列国会投票选出一名反对看守总理内坦亚胡政治议程的新议长。尽管内坦亚胡的主要竞争对手目前在组建新政府上仍面临困难，但此举被视为可能推翻内坦亚胡具争议性政治议程的第一步。路透社报道，以色列国会发言人办公室星期二（11月17日）宣布，由目前负责组阁的前总参谋长埃森科特（Gadi Eisenkot）领导...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-17 21:32</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4073876110677121?f=rss" target="_blank" rel="noopener">抖音生活服务负责人调整：浦燕子转任公司顾问，莫少君接任｜独家</a>
+                    </h3>
+                    <p class="article-summary">文｜肖思佳 编辑｜乔芊 杨轩 11月17日，36氪获悉，因个人及家庭生活安排，浦燕子将不再担任抖音生活服务总裁，转任公司顾问，后续将参与公司公益等相关工作。该职务由红果短剧负责人莫少君接任。 据介绍，浦燕子是抖音集团的早期员工之一，2023年11月，作为抖音集团商业化负责人，浦燕子开始兼任抖音生活服...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-17 20:49</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4073822871147394?f=rss" target="_blank" rel="noopener">好未来的「生死反转」：优化员工，买入智谱</a>
+                    </h3>
+                    <p class="article-summary">作者 |&nbsp;谢芸子 编辑 | 张帆 想靠AI赚钱的教育公司，先被AI上了一课。 今年6月，粉笔创始人张小龙在人民大学的一场讲座上，大秀“炒科技股”的回报，并批评在场学生“除了混进体制内，没什么本事”。 风波以道歉和辞职收场。但他的确言行一致。上半年，粉笔的权益类投资从“几乎为零”飙到4.79...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-11-17 19:18</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/374103" target="_blank" rel="noopener">最大规模具身大模型挑战赛落幕，48 小时真机总决赛比出了什么？</a>
+                    </h3>
+                    <p class="article-summary">开发者围绕同一块基础模型进行实验，让模型直面成功的方法、失败的经验和真实世界的问题。作者｜Li Yuan编辑｜郑玄最大规模具身大模型挑战赛总决赛结果出炉，排名第三的队伍 SST 只额外采集了 13 条数据。他们没有大量补数据，而是让 DeepSeek 先理解任务，再用视觉分割模型标出目标物体，最后交...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-17 19:17</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4073736741344384?f=rss" target="_blank" rel="noopener">第十六届香港国际金融论坛暨第七届���航「9+2」粤港湾大湾区发展论坛</a>
+                    </h3>
+                    <p class="article-summary">具身智能正加速迈向全球产业落地，「十五五」开局与香港「超级联系人」角色深化，为硬科技出海打开新窗口。 11月23日,第十六届香港国际金融论坛暨第七届领航「9+2」粤港澳大湾区发展论坛·香港国际具身智能峰会启幕,汇聚国内顶尖具身智能头部企业与核心决策者,依言托香港国际化场景、合规体系与全球资本网路，打...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-17 18:07</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4072516740797318?f=rss" target="_blank" rel="noopener">融资首发｜3D打印批量化制造向具身智能拓展，博理科技连续完成超5亿元融资</a>
+                    </h3>
+                    <p class="article-summary">36氪获悉，近日，博理科技（POLLYPOLYMER）连续完成B2轮与B+轮两轮股权融资，合计融资金额超5亿元人民币。其中，B2轮由基石资本与老股东金沙江联合资本联合领投，格致资本、天堂硅谷、中时资本、云锦资本、卓璞基金跟投；B+轮由经纬创投领投，安耐德资本、天堂硅谷跟投，产业投资方长盈精密同步参投...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-11-17 17:58</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/374101" target="_blank" rel="noopener">AI，没有抛弃小城商家</a>
+                    </h3>
+                    <p class="article-summary">作者｜李苏 编辑｜郑玄 理解本地商业，是 AI 走出实验室后的新课程。 过去几年，AI 界擅长讲的故事变了。 从最开始谈技术，讲参数有多大，算得有多快，跑分超过多少人，慢慢转变为讲落地，讲 AI 怎么一分钟生成商业计划书，怎么给被生活困扰的人们出情绪价值满满的建议。 走出实验室，AI 下一站在哪里？...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-11-17 15:12</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/374083" target="_blank" rel="noopener">腾讯 Hy4 flash 实测：快速、实惠、聪明，国模进入过日子时代</a>
+                    </h3>
+                    <p class="article-summary">作者｜Cynthia 编辑｜郑玄 过日子的风，还是吹到了大模型行业。 2026 年之前，一款模型能不能刷屏，往往取决于它又做到了什么。GPT-4o 的实时语音交互、Claude 的编程能力、DeepSeek R1 的推理表现，一度轮番成为讨论焦点。一款新模型发布，大家首先关心的是它超过了谁，又做到了...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-17 14:52</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4073486195332226?f=rss" target="_blank" rel="noopener">AI正在杀死游戏行业吗？| 游戏风向标</a>
+                    </h3>
+                    <p class="article-summary">文丨二几 在游戏行业，AI正在成为一场关于未来的“罗生门”：有人把AI视作生产力革命，有人担心AI将摧毁原有的开发者生态。支持和反对各执一词，谁也说不准哪一种未来会先到来。 GDC刚刚发布的《2026年游戏行业报告》显示，40%的游戏行业从业者已经在工作中使用生成式AI，但与此同时，55%的受访者认...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-11-17 14:41</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/374079" target="_blank" rel="noopener">全村希望，千问 4 Max 正式发布，2.4 万亿参数模型「进厂打工」</a>
+                    </h3>
+                    <p class="article-summary">作者｜桦林舞王 编辑｜靖宇 底座架构重写，单任务成本暴降近六成，阿里把旗舰模型拉进了真实排班表。 终于，一款国产旗舰模型现身了。 11 月 16 日，阿里千问正式发布新一代旗舰模型 Qwen4-Max。就在五天前，它的预览版 qwen4-max-preview 刚在 Token Plan 里低调露过...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-11-17 14:24</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/374075" target="_blank" rel="noopener">OpenAI 和 Meta 联手，打通了 Agent 商业「最后一公里」</a>
+                    </h3>
+                    <p class="article-summary">作者｜桦林舞王 编辑｜靖宇 Agent 能进门了，也能付钱了。 Agent 替用户「消费」的时代，终于到来了。 美国时间 2026 年 11 月 13 日，两家公司两场发布会同天发生。一边是企业级对话式智能体公司 Sierra 联合 Meta 正式发布个人代理协议 Poppy v1.0，解决助手怎么...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-17 12:31</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4073327210304649?f=rss" target="_blank" rel="noopener">业绩快报 | 爱奇艺Q3Non-GAAP运营盈利，内容生态转型与AI战略初显成效</a>
+                    </h3>
+                    <p class="article-summary">11月16日，爱奇艺（NASDAQ:IQ）发布2026年第三季度财报。报告期内，公司保持核心业务领先的同时，继续推进“转型长视频社交媒体”与“All in AI”两大战略。三季度，平台内容供给进一步扩大，内容成本结构持续优化，Non-GAAP运营利润重回盈利。 数据显示，三季度，公司实现总收入60....</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-17 11:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4072342767047814?f=rss" target="_blank" rel="noopener">前安克CMO创办的AI可穿戴硬件再获新融资，产品已量产｜硬氪首发</a>
+                    </h3>
+                    <p class="article-summary">作者｜黄楠 编辑｜袁斯来 硬氪获悉，AI Memory智能硬件公司「穗升科技」近日完成数千万元Pre-A轮融资，本轮由NexTide Capital、阿尔法公社投资。资金将重点投入长期记忆引擎、主动式Agent的体验优化，拓展家庭、团队场景，推进硬件量产交付，并搭建海外渠道、完善本地化交付能力。 穗...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-11-17 08:42</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/374056" target="_blank" rel="noopener">消息称黄仁勋回归尚未进入英伟达董事会议程；腾讯总办号召AI时代再创业；AI 演员虚假代言被罚</a>
+                    </h3>
+                    <p class="article-summary">消息称黄仁勋回归尚未进入英伟达董事会议程，已有 18 万人联署呼吁复职 11 月 17 日消息，CNBC 今天（11 月 17 日）发布博文，援引一名知情人士透露信息，英伟达董事会目前没有考虑让黄仁勋重新担任首席执行官，也未就其回归展开讨论。报道称英伟达董事会的工作重心，目前聚焦推进针对黄仁勋相关行...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-11-16 08:47</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373994" target="_blank" rel="noopener">曝黄仁勋考虑重返英伟达担任 CEO；苹果计划明年发布首款智能眼镜；OpenAI 撤销独立机器人研究团队</a>
+                    </h3>
+                    <p class="article-summary">曝黄仁勋考虑重返英伟达担任 CEO，盟友正施压董事会 据英国《金融时报》周日报道，黄仁勋正考虑重返英伟达担任首席执行官。如今他在硅谷的多位盟友正向英伟达董事会施压，要求公司重新任命他。 报道称，黄仁勋已经和亲信讨论了重返公司的可能性。与此同时，英伟达董事会还在开展独立调查。 一位黄仁勋的盟友表示，他...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">极客公园</span>
+                        <span class="article-time">2026-11-15 08:02</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="http://www.geekpark.net/news/373993" target="_blank" rel="noopener">传小米联手 AMG 之父，打造极致性能车；SpaceX 首次实现筷子夹飞船；「苹果最暗产品」诞生</a>
+                    </h3>
+                    <p class="article-summary">曝小米与「AMG 之父」创办的 HWA 秘密合作，希望打造「载入史册」新车 当地时间 11 月 5 日，意媒 Quattroruote 援引不具名知情人士消息称，小米与 HWA 或在秘密合作开发一款超高性能汽车，部分知名零部件供应商也有望参与其中。 双方据称希望打造一款性能前所未有、足以载入汽车史册...</p>
+                </article>
+                </div></section>
+        <section id="奇思妙想" class="category-section">
+            <div class="category-header">
+                <h2>奇思妙想</h2>
+                <p class="category-desc">每天吸收些稀奇古怪的知识，期待引发后续的灵机一动。</p>
+            </div>
+            <div class="articles-grid">
+        
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-18 11:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/119193" target="_blank" rel="noopener">跟着老板自驾去海南是种什么体验？明日公园 vlog 回顾</a>
+                    </h3>
+                    <p class="article-summary">从深圳一路开车到广东最南端的徐闻，再和车分别乘坐渡轮，穿过地理课本里的琼州海峡。终于抵达海南后，老板却告诉我们这趟旅程真正的目的地，竟然是……查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-18 10:30</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/118975" target="_blank" rel="noopener">兼顾随身阅读与自主开发的 4.7 英寸墨水屏设备：小纸 Pico 现货上架少数派</a>
+                    </h3>
+                    <p class="article-summary">想找一台可以随身带着读书的墨水屏设备，也想自己改改界面、不被系统「绑架」？近期思维重置团队上架的小纸 Pico 墨水屏开发板是一个值得留意的选择。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-18 08:46</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/119210" target="_blank" rel="noopener">派早报：国区 App Store 将 AIGC 合规设为上架必填、OpenAI 发布 GPT-6.2 Astra 等</a>
+                    </h3>
+                    <p class="article-summary">iPhone Duo 测试 2D 人脸解锁功能，松下发布紧凑型电影摄影机 SHX1 等。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-11-18 00:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9794074" target="_blank" rel="noopener">美国大都会博物馆里面为什么要有中国园林？</a>
+                    </h3>
+                    <p class="article-summary">窈慕颜，靠吃记路的斜杠设计师 | 分享艺术、分享美 查看知乎原文 缘起 首先是因为博物馆购入了一套明式家具，时任大都会博物馆董事、阿斯特基金会负责人的文森.阿斯特夫人提出在博物馆内制造一座中国庭院来放置这套家具。用中国园林给中国古典家具一个陈列空间，这可能也与阿斯特夫人童年在北京度过有关，她有关于中...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-11-18 00:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9794080" target="_blank" rel="noopener">古代贵族饭桌上，有哪些流传至今的「点心」？</a>
+                    </h3>
+                    <p class="article-summary">庆晓筱，我一直以为净身出户是指切鸡鸡走人 查看知乎原文 为了一块“点心”，土耳其和希腊曾经爆发了一场“巴克拉瓦战争”（Baklava War）。 巴克拉瓦是地中海周边的一款传统点心。 2006 年 5 月，维也纳峰会。在奥地利总统的倡议下，欧盟各国将庆祝第二十个“欧洲日”。 在这个欢腾的日子中，塞浦...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-11-18 00:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9794082" target="_blank" rel="noopener">西安遍地是文物，那罗马是否也是如此？</a>
+                    </h3>
+                    <p class="article-summary">我是妖怪，可乐加冰 查看知乎原文 不得不提屡次被考古发现延期的罗马地铁 C 线了，该线 2007 年开工，计划于 2011 年完成第一阶段（从 Pantano 到 San Giovanni 部分），全线（约 26 公里、29 站）在 2015-2020 年间逐步开通。由于频繁的考古发现：第一段 20...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-11-18 00:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9794092" target="_blank" rel="noopener">瞎扯 · 如何正确地吐槽</a>
+                    </h3>
+                    <p class="article-summary">瞎扯 · 可以莫名其妙教一个技能吗？ 知乎日报 查看知乎原文 Q：可以莫名其妙教一个技能吗？ @王伟 &nbsp;：在出租车上疯狂放屁，可以减少司机绕路的可能性。 Q：潮汕的存在感为什么这么强？ @黄色节制 &nbsp;：因为短视频时代，全国人民终于发现有个地方过年不只是喝大酒，搓麻将，玩手机了＠(...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-17 17:02</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/119184" target="_blank" rel="noopener">社区速递 166｜柯尼卡胶片机、iPhone Duo 体验与假期省钱实操大赏</a>
+                    </h3>
+                    <p class="article-summary">除了首页时间流和侧栏的精选展位，少数派Matrix社区还有很多优秀内容因条件所限无法得到有效曝光，因此我们决定重启Matrix周报，并在此基础上添加更多社区内容、作者投稿新玩意呈现给大家。上周社区速递 ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-17 15:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/118976" target="_blank" rel="noopener">TDS REVIEW｜Bose 有线消噪耳塞体验</a>
+                    </h3>
+                    <p class="article-summary">这篇文章是TDSStudio在少数派上的第35篇文章，依然是全平台首发。早先我们评价过绯乐的虹，当时在评论区曾经有一些读者好奇它和BoseQC20的区别。有线降噪入耳耳机，在TWS时代到来之前曾经是一 ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-17 10:59</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/118442" target="_blank" rel="noopener">为了另一种可能性：在国内折腾 Linux 打游戏的二三事</a>
+                    </h3>
+                    <p class="article-summary">当外部的限制开始逐渐渗透、内化到每个人的内心，另一种真正的「可能性」在现今尤为珍贵。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-17 07:57</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/119160" target="_blank" rel="noopener">派早报：OPPO 发布 Reno17 系列、影石发布 Insta360 Toast 墨水屏相纸等</a>
+                    </h3>
+                    <p class="article-summary">少数派的近期动态我们已开设专页，汇总展示「优秀作者评选」奖项及结果。「优秀作者评选」是编辑部自2023年起实行的机制，于每季度结束后，评选该季度贡献突出的现有作者，以及涌现出的有潜力新作者。获奖者会获 ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-16 18:09</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/119148" target="_blank" rel="noopener">派评 | 近期值得关注的 App</a>
+                    </h3>
+                    <p class="article-summary">>下载少数派客户端、关注少数派公众号，解锁全新阅读体验📰>实用、好用的正版软件，少数派为你呈现🚀查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-16 15:37</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/118100" target="_blank" rel="noopener">Rosetta 2 即将退役，Mac 老应用何去何从？</a>
+                    </h3>
+                    <p class="article-summary">Apple在Mac电脑的发展历程中经历过数次架构转换。其中最广为人知的，当属2005年从PowerPC转向Intelx86架构，以及从2020年启动、由Intelx86转向ARM64架构的AppleS ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-16 10:52</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/119012" target="_blank" rel="noopener">App+1｜不卡带：给你爱听的「老调」，配点记忆中的风味</a>
+                    </h3>
+                    <p class="article-summary">能切换老设备音质的媒体播放器。查看全文</p>
+                </article>
+                </div></section>
+    </main>
+
+    <footer>
+        <p>互联网新闻聚合 · 2026-11-18 · 数据来源：36Kr / 虎嗅 / 少数派 等</p>
+    </footer>
+</body>
+</html>
