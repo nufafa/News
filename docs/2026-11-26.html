@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互联网新闻聚合 - 2026-11-26</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+        }
+
+        /* 顶部导航 */
+        header {
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 0 24px;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 56px;
+        }
+
+        .site-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .site-date {
+            font-size: 13px;
+            color: #86868b;
+        }
+
+        nav {
+            display: flex;
+            gap: 4px;
+        }
+
+        .nav-item {
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #1d1d1f;
+            text-decoration: none;
+            transition: background 0.2s;
+            font-weight: 500;
+        }
+
+        .nav-item:hover {
+            background: #f5f5f7;
+        }
+
+        /* 主内容区 */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 32px 24px;
+        }
+
+        /* 分类区块 */
+        .category-section {
+            margin-bottom: 48px;
+        }
+
+        .category-header {
+            margin-bottom: 20px;
+        }
+
+        .category-header h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1d1d1f;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+
+        .category-desc {
+            font-size: 15px;
+            color: #86868b;
+        }
+
+        /* 文章网格 */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 16px;
+        }
+
+        /* 文章卡片 */
+        .article-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .article-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .article-source {
+            background: #f0f0f5;
+            color: #6e6e73;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 10px;
+        }
+
+        .article-time {
+            font-size: 12px;
+            color: #86868b;
+        }
+
+        .article-title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .article-title a {
+            color: #1d1d1f;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .article-title a:hover {
+            color: #0071e3;
+        }
+
+        .article-summary {
+            font-size: 14px;
+            color: #6e6e73;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 32px 24px;
+            color: #86868b;
+            font-size: 13px;
+            border-top: 1px solid rgba(0,0,0,0.06);
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .header-inner { flex-direction: column; height: auto; padding: 12px 0; gap: 8px; }
+            nav { flex-wrap: wrap; justify-content: center; }
+            .articles-grid { grid-template-columns: 1fr; }
+            .category-header h2 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div>
+                <div class="site-title">📰 互联网新闻聚合</div>
+            </div>
+            <nav>
+                <a href="#互联网资讯" class="nav-item">互联网资讯</a>
+<a href="#奇思妙想" class="nav-item">奇思妙想</a>
+
+            </nav>
+            <div class="site-date">更新于 2026-11-26 15:00</div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="互联网资讯" class="category-section">
+            <div class="category-header">
+                <h2>互联网资讯</h2>
+                <p class="category-desc">整合互联网资讯媒体，偏重于前端科技、电子硬件、手机应用。</p>
+            </div>
+            <div class="articles-grid">
+        
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-26 14:34</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4086154043009413?f=rss" target="_blank" rel="noopener">OBSBOT寻影发布三款新品，加速AI影像自动化落地｜最前线</a>
+                    </h3>
+                    <p class="article-summary">作者｜黄楠 编辑｜袁斯来 11月25日，智能影像品牌OBSBOT寻影发布寻影Tail 2先锋版、Tail Air 2与Meet 3三款新品，分别面向专业远距离拍摄、轻量化节目制作与桌面视讯场景。 影像设备行业正在经历一轮叙事重心的转移。过去几年，主流产品的竞争集中在传感器尺寸、分辨率、帧率等硬指标上...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-26 13:23</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com.sg/news/world/story20261126-10060857" target="_blank" rel="noopener">马斯克：美国每名儿童赠送两股SpaceX股票</a>
+                    </h3>
+                    <p class="article-summary">美国太空探索科技公司（SpaceX）首席执行官马斯克在社媒平台X发文说，美国每名儿童都将获得两股SpaceX股票，一股由公司捐赠，另一股由他个人捐赠。路透社报道，SpaceX当天早些时候宣布，将向每个目前活跃的特朗普账户捐赠一股新发行的A类普通股。马斯克也承诺，个人捐赠的股票数量将与公司相同。目前尚...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-26 11:20</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com.sg/news/world/story20261126-10060115" target="_blank" rel="noopener">分析：中期选举重挫后 特朗普转以关税巩固权力</a>
+                    </h3>
+                    <p class="article-summary">美国总统特朗普在11月初的中期选举中遭遇挫败，共和党失去国会两院控制权。选民普遍不满物价和通胀问题，出口民调显示，约三分之二选民认为特朗普的关税政策损害美国经济。然而，特朗普政府星期三仍宣布，计划对14个主要贸易伙伴加征新关税。路透社分析指出，特朗普加码关税，反映他长期以来对保护主义的坚持，也显示在...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-26 10:44</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com.sg/news/world/story20261126-10059893" target="_blank" rel="noopener">曾缔造80年代摇滚经典 杜兰杜兰吉他手泰勒病逝</a>
+                    </h3>
+                    <p class="article-summary">英国新浪潮乐队杜兰杜兰前吉他手安迪·泰勒因前列腺癌去世，享年65岁。乐队和家人星期三（11月25日）在社交媒体宣布，他星期一（23日）在家人陪伴下安详离世。泰勒以摇滚和放克风格的吉他演奏闻名，参与塑造了杜兰杜兰（Duran Duran）独特的音乐风格，帮助乐队成为1980年代英国新浪潮的重要代表。他...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-26 10:36</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com.sg/news/world/story20261126-10059795" target="_blank" rel="noopener">加沙遇害战地记者达加获追授罗里·佩克自由视频记者奖</a>
+                    </h3>
+                    <p class="article-summary">巴勒斯坦战地记者玛丽亚姆·达加去年在加沙遭以军空袭身亡，罗里·佩克信托基金星期三（11月25日）宣布，追授她享有盛誉的罗里·佩克自由视频记者奖，以表彰她在战争期间的报道。 达加与美联社两名同事哈纳（Abdul Karim Hana）和阿尔什拉菲（Jihad Alshrafi）共同获奖。信托基金说，三...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-26 10:25</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4085971424995714?f=rss" target="_blank" rel="noopener">36氪首发丨安克前高管创业做AI音频设备，获博裕创投等数千万元种子轮融资，产品即将众筹</a>
+                    </h3>
+                    <p class="article-summary">作者&nbsp;|&nbsp;乔钰杰 编辑&nbsp;|&nbsp;袁斯来 本文约4500字，建议阅读11分钟 硬氪获悉，AI声学感知公司「听好科技」（HearWell）近日完成两轮共数千万元融资，由博裕创投、璀璨资本、梅花创投、修远资本参与投资，涵盖财务投资机构与产业投资方（机构按拼音首字母排列）...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-26 10:07</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4085953425877377?f=rss" target="_blank" rel="noopener">36氪首发丨牛津博士团队绕开光刻机用玻璃做高维光计算芯片，获英诺基金独家天使投资</a>
+                    </h3>
+                    <p class="article-summary">图源/企业 本文约2400字，建议阅读6分钟 作者丨欧雪&nbsp; 编辑丨袁斯来 硬氪获悉，光计算芯片公司万相常数近期已完成数千万元天使轮融资，由英诺基金独家投资。本轮资金将主要用于光电融合验证板卡的样机开发、飞秒激光直写设备及光电实验室搭建，以及核心研发团队的扩充。泰合资本担任本轮融资财务顾问。...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-26 10:02</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com.sg/news/world/story20261126-10059616" target="_blank" rel="noopener">美国批准向乌克兰出售F-16战斗机维修设备</a>
+                    </h3>
+                    <p class="article-summary">美国国务院宣布，美国已批准向乌克兰出售价值6亿2200万美元（约8亿新元）的F-16战机维修设备及其他物资，费用由四个欧洲国家承担，不涉及美国资金。美国国务院星期三（11月25日）在声明中说，这笔军售费用由比利时、丹麦、荷兰和挪威承担。此次军售包括弹药驱动装置、推进剂设备、实验室器材和运输支援，将补...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-26 09:54</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com.sg/news/world/story20261126-10059563" target="_blank" rel="noopener">金正恩：朝鲜核武能力已成现实 应扩大多平台发射能力</a>
+                    </h3>
+                    <p class="article-summary">朝鲜领导人金正恩说，朝鲜应扩大从不同平台发射核武器的能力，并强调朝鲜的核武能力如今已成为“现实”。朝鲜官方媒体星期四（11月26日）报道，金正恩星期三视察一处未公开地点的核武器研究设施时发表上述言论。平壤过去多次强调，不会放弃核武器。朝中社报道，金正恩说，核武器制造部门应重视发展可在多个领域使用、执...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-26 09:52</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4054916912600195?f=rss" target="_blank" rel="noopener">36氪首发丨合肥产投领投量子计算企业超亿元，攻坚中性原子量子多机互联</a>
+                    </h3>
+                    <p class="article-summary">文 | 张卓倩 编辑 | 袁斯来 36氪获悉，中性原子量子计算企业「乾原量子」近日完成超 1 亿元天使轮融资，本轮融资将主要用于核心光学器件自研迭代、乾阵系列中性原子 QPU&nbsp;（量子处理单元）整机研发，以及 QAVEXUS （量子互联技术）多机互联接口的预研与工程调试，同时用于科研团队扩充...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-26 09:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4084622369516167?f=rss" target="_blank" rel="noopener">「华源智因」获过亿元天使轮融资，已有基于临床管线的药效预测合作落地｜36氪首发</a>
+                    </h3>
+                    <p class="article-summary">文｜胡香赟 编辑｜海若镜 36氪获悉，近日，「华源智因」已完成过亿元天使轮融资。本轮由华盖资本领投，华方资本、华映资本、梅花资本、同新基金、讯飞创投、启赋资本跟投。募集资金将主要用于大规模人源扰动数据生产、联合实验室建设，以及加速药企订单执行和商业化落地。向阳资本为公司长期独家财务顾问。 华源智因是...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-26 08:51</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com.sg/news/world/story20261126-10059308" target="_blank" rel="noopener">埃及油罐车引发火灾 至少31死21伤</a>
+                    </h3>
+                    <p class="article-summary">一辆运载石油产品的卡车在埃及大开罗地区起火，造成至少31人死亡、21人受伤，是埃及近年来伤亡最严重的交通事故之一。埃及卫生部说，事故发生在吉萨省工人阶级聚居区瓦拉克（Warraq）。卡车起火后，现场火势迅速蔓延，造成多人死伤。检方在声明中说，卡车引发的碰撞事故导致火灾。大火还烧毁了27辆汽车和摩托车...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-26 08:45</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com.sg/news/world/story20261126-10059284" target="_blank" rel="noopener">纽约强风来袭 梅西感恩节大游行史上首次延期</a>
+                    </h3>
+                    <p class="article-summary">受强风天气影响，梅西感恩节大游行历史上首次因天气原因延期。主办方梅西百货宣布，原定星期四（11月26日）举行的游行将改在星期六（28日）举行，以确保参与者和观众安全。美国国家气象局预报，纽约市感恩节当天可能出现时速高达96公里的阵风。当地已发布大风警报，持续风速最高可达每小时56公里，阵风则可能达到...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-26 08:30</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com.sg/news/world/story20261126-10059229" target="_blank" rel="noopener">以军空袭加沙致10人死 包括哈马斯安全官员一家四口</a>
+                    </h3>
+                    <p class="article-summary">以色列空袭加沙地带，造成一名哈马斯内部安全官员、他的妻子和两个女儿死亡。以色列军方说，袭击目标是一名哈马斯武装人员。以军星期三（11月25日）称，部队连夜空袭加沙北部，击毙当地内部安全局局长奥夫。加沙内政部证实奥夫及他的妻子和两个女儿丧生。 加沙民防部门发言人巴萨尔说，以军袭击加沙城西部沙提难民营一...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">《联合早报》-国际-即时</span>
+                        <span class="article-time">2026-11-26 08:19</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://www.zaobao.com.sg/news/world/story20261126-10059198" target="_blank" rel="noopener">美国联邦法官再次阻止特朗普限制出生公民权</a>
+                    </h3>
+                    <p class="article-summary">美国联邦法官再次阻止总统特朗普限制出生公民权的行政命令生效。这是第二名联邦法官作出类似裁决。此前，美国最高法院已驳回特朗普首次限制出生公民权的尝试。华盛顿特区联邦地区法院法官库珀颁布初步禁令，禁止政府依据特朗普今年8月签署的行政命令，剥夺在美国出生儿童的公民身份。 库珀星期三（11月25日）说，案件...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-26 08:18</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4085847020153478?f=rss" target="_blank" rel="noopener">8点1氪丨英伟达市值一夜蒸发近9800亿元；福布斯中国辟谣“8万元包上榜”；斗鱼及创始人陈少杰被执行1.9亿余元</a>
+                    </h3>
+                    <p class="article-summary">今日热点导览 特朗普：必要时愿意赦免黄仁勋 Anthropic上市次日，创始人兄妹套现5.6亿美元 星巴克据悉正与银行洽谈出售其日本业务事宜 黄仁勋复职不穿皮衣改穿棉夹克，迪奥同款售价28000元，官网多尺寸售罄 比特币基金即将创下史上最差单月表现，资金流出规模逼近50亿美元 野人先生创始人退股运营...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-25 18:11</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4085010597210754?f=rss" target="_blank" rel="noopener">正式开场就在明天！请以我的名字呼唤我，WISE2026就差你了</a>
+                    </h3>
+                    <p class="article-summary">今年是WISE的第十四年，也是头一回把会期从两天拉到三天。主题就一句话：“请以我的名字呼唤我，CALL ME BY NAME”。主会场、2000平米的未来之城、世界咖啡产业对接全拉满，另外另开两桌——具身智能与文商旅、了不起的OPC两个分会场。 三天里，200多个名字要被叫到，80多场对话等着开麦，...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-25 11:17</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4084605857753478?f=rss" target="_blank" rel="noopener">机器人上班、火箭卫星登场｜WISE把一座未来之城搬到了现场</a>
+                    </h3>
+                    <p class="article-summary">WISE2026未来之城展区怎么逛？最新打开方式，一文解锁。今年，WISE将在现场设置约1000平方米的未来展区。我们不把科技产品摆进展柜，我们把一座正在生长的“未来之城”，提前开放给所有人。 在现场给机器人安排了工作 在未来展区，你会见到一群已经“找到工作”的机器人。优理奇科技将带来机器人乐队，光...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-25 10:31</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4084560902728326?f=rss" target="_blank" rel="noopener">36氪新风向丨英伟达押注、黄仁勋看好，半导体赛道又爆出大热点</a>
+                    </h3>
+                    <p class="article-summary">图源/视觉中国 本文约4700字，建议阅读12分钟 作者丨欧雪 编辑丨袁斯来 很多投资人或许偶尔还会回想起，自己怎么错过那家估值几百亿的光芯片公司。 那是2023年，他们对面的那个年轻人已经见了上百个投资人，声音已经有些嘶哑。“我们很感兴趣，会推进的。”投资人们说着客套话，心里清楚知道自己不会出手。...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">36氪</span>
+                        <span class="article-time">2026-11-25 10:23</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://36kr.com/p/4084553221630343?f=rss" target="_blank" rel="noopener">36氪首发丨创始人师从“量子互联网之父”，量子计算企业获联想之星等超亿天使轮融资</a>
+                    </h3>
+                    <p class="article-summary">图源/企业 本文约3600字，建议阅读9分钟 作者丨欧雪 编辑丨袁斯来 硬氪获悉，近日，中性原子量子计算企业原子芯光（上海）量子科技有限公司（以下简称“原子芯光”）宣布完成超亿元天使轮融资。本轮融资由联想之星、上海未来产业基金联合领投，北京中关村资本、徐汇资本、嘉铭浩春、硅港资本、金雨茂物、添宥资本...</p>
+                </article>
+                </div></section>
+        <section id="奇思妙想" class="category-section">
+            <div class="category-header">
+                <h2>奇思妙想</h2>
+                <p class="category-desc">每天吸收些稀奇古怪的知识，期待引发后续的灵机一动。</p>
+            </div>
+            <div class="articles-grid">
+        
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-26 11:13</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/117510" target="_blank" rel="noopener">我用AI做了一张两千年的中国历史地图</a>
+                    </h3>
+                    <p class="article-summary">希望这张地图，能陪更多人走一遍故纸堆里的万里江山。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-26 08:08</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/119560" target="_blank" rel="noopener">派早报：蔚来举办 2026 创新科技日、Tidal 将拒绝 AI 音乐等</a>
+                    </h3>
+                    <p class="article-summary">阿里千问 Go 开放免费代打电话服务、Sand.ai 发布视频生成模型 MAGI-2 等。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-11-26 00:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9794251" target="_blank" rel="noopener">鸟类能尝出果实的甜味吗？</a>
+                    </h3>
+                    <p class="article-summary">所有鸟类都没有甜味受体。它们吃水果的时候，尝到的可能是”鲜味”，而不是”甜味”。 这个事实可能颠覆很多人的直觉——你看那些小鸟叽叽喳喳地啄食浆果，蜂鸟疯狂地吸食花蜜，你以为它们和我们一样在享受甜蜜。但从生物学的角度看，鸟类感知到的”好吃”，和我们完全不是一回事。 我们先来聊聊味觉的基本原理。 人类有...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-11-26 00:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9794252" target="_blank" rel="noopener">现代人能吃得惯古代普通老百姓家里的菜吗？</a>
+                    </h3>
+                    <p class="article-summary">可能严重吃不惯，而且会中毒。 既然是说“普通老百姓”，我就以日子紧巴巴的清中期直隶农村举个例子。马戈尔尼使团随团的博物学家约翰·巴罗（Sir John Barrow）记载过一个“很有味道”的民俗。 约翰·巴罗 Travels In China 插图：中国的村舍 在巴罗看来，直隶的普通民生是他途径五省...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-11-26 00:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9794262" target="_blank" rel="noopener">为什么龟没有完全抢占鳖的生态位、淘汰掉鳖？</a>
+                    </h3>
+                    <p class="article-summary">你佛罗里达珍珠鳖叔叔，上可给欧洲殖民者一点小小的王八震撼，退可与短吻鳄共享巢穴，下还可配合路边骗子充当百年甲鱼精，龟小弟做的到吗？ 佛州珍珠鳖甚至完成了爬行类中唯二的，其中一次对美国飞机的损毁打击，属实是爬行之光。 由于欧洲本土几乎不存在软壳鳖类，只有硬壳且性情温和的龟龟，因此欧洲人第一次见到佛罗里...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">知乎日报</span>
+                        <span class="article-time">2026-11-26 00:00</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://daily.zhihu.com/story/9794272" target="_blank" rel="noopener">瞎扯 · 如何正确地吐槽</a>
+                    </h3>
+                    <p class="article-summary">瞎扯 · 中国为什么出不了优质葡萄酒？ Q：中国为什么出不了优质葡萄酒？ @独立山头 &nbsp;：当一种饮料需要教育你怎么喝才好喝的时候，就说明它根本不好喝。 Q：博物馆里的展品说明为何有时看不懂？&nbsp; @祥和居主人 &nbsp;：说明知识结构有缺陷呗，给我本大学物理我也看不懂啊。 Q：见...</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-25 17:48</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/119264" target="_blank" rel="noopener">翻开 2027， 值得入手的新年日历推荐</a>
+                    </h3>
+                    <p class="article-summary">按照中国的农历纪年法，2027年是羊年，《说文解字》说「羊，祥也」。《诗经・小雅・无羊》云「尔羊来思，其角濈濈」，写羊群缓缓归野，安然相聚，恰合丁未岁的平和气象。一只吉羊，一册日历，便是收纳这一年日常 ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-25 14:59</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/119310" target="_blank" rel="noopener">App+1｜Yab：开源、AI 友好的双内核浏览器，给舍不得 Arc 的你</a>
+                    </h3>
+                    <p class="article-summary">Arc 花了很大力气重新设计「人该如何使用浏览器」，YAB 在继承这份交互遗产的同时，又顺手为 AI 打开了另一扇门。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-25 11:07</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/118791" target="_blank" rel="noopener">怀旧手记｜Palm Pre：内藏「划时代」系统的手机</a>
+                    </h3>
+                    <p class="article-summary">Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质的文章，展示来自用户的最真实的体验和观点。文章代表作者个人观点 ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-25 08:22</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/119527" target="_blank" rel="noopener">派早报：华为发布 Mate X8 与 MateBook Fold S、微软将推出自研驱动等</a>
+                    </h3>
+                    <p class="article-summary">豆包 AI 个人助理「小豆」开启公测，Teenage Engineering 推出复古 CD 播放器 EP / BC-1 等。查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-24 17:14</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/119492" target="_blank" rel="noopener">社区速递 167｜迪卡侬折叠车、静电白板贴与跨系统设备协同</a>
+                    </h3>
+                    <p class="article-summary">除了首页时间流和侧栏的精选展位，少数派Matrix社区还有很多优秀内容因条件所限无法得到有效曝光，因此我们决定重启Matrix周报，并在此基础上添加更多社区内容、作者投稿新玩意呈现给大家。上周社区速递 ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-24 15:38</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/119035" target="_blank" rel="noopener">[限时特惠] 从构思到完稿，让长文写作更有条理：妙笔</a>
+                    </h3>
+                    <p class="article-summary">写一篇短文，我们可能只需要一个能让人打开即用的编辑器，比如说Apple用户最常用的系统备忘录，或者广为人知的桌面应用MicrosoftWord。但当文章的篇幅逐渐变长，一些原本不太起眼的事情也会变得麻 ...查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-24 11:03</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/119412" target="_blank" rel="noopener">写在动荡之后：漫步巴黎的寻常一日</a>
+                    </h3>
+                    <p class="article-summary">巴黎市徽上的那艘船，依然留着它的格言：「任凭风浪，亦不沉没。」查看全文</p>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-source">少数派</span>
+                        <span class="article-time">2026-11-23 18:08</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="https://sspai.com/post/119438" target="_blank" rel="noopener">派评 | 近期值得关注的 App</a>
+                    </h3>
+                    <p class="article-summary">>下载少数派客户端、关注少数派公众号，解锁全新阅读体验📰>实用、好用的正版软件，少数派为你呈现🚀查看全文</p>
+                </article>
+                </div></section>
+    </main>
+
+    <footer>
+        <p>互联网新闻聚合 · 2026-11-26 · 数据来源：36Kr / 虎嗅 / 少数派 等</p>
+    </footer>
+</body>
+</html>
